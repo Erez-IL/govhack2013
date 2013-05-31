@@ -30,22 +30,25 @@ and trying to make a video to explain it.
 So far I have:
 
 - written some Perl to manipulate the data
-- created a database table and loaded the data so we can analyse in SQL
+- created a database table and loaded the data so we can analyse it in SQL
 - generated country totals
 - put it all on github so that it is accessible
 
-What else I could do (but it would be great if someone could take this on):
+What else I think needs to be done:
+
 - make some more data summaries
 - limit the data to our top 10 trading partners
 - if we want to use a
 [Choropleth map](http://en.wikipedia.org/wiki/Choropleth_map)
 then select a colour progression and determine what number ranges move from
 one colour to the next
-
-
-If someone else could:
-- display that visually (e.g. overlaying a map of the world, maybe as some sort of
+- display data visually (e.g. overlaying a map of the world, maybe as some sort of
 [Choropleth map](http://en.wikipedia.org/wiki/Choropleth_map)
+
+What I will do:
+
+- Make a template for a video of the data
+- Finalise a video based on the visualisations
 
 ## Countries
 
