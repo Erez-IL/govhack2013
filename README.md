@@ -11,6 +11,18 @@ The data set used is [Australian foreign trade country and commodity data](http:
 
 The data set contains 184,793 rows of data for 229 countries, 264 commodity categories over a 6 year period.
 
+## Approach
+
+I think we are best concentrating on overall country data and maybe even limiting that to our 10 largest trading partners.  If (I think it's a big if) we have time, we could look at other things, but I think we are best getting something displayed visually as quickly as possible and trying to make a video to explain it.
+
+## Data manipulation
+
+So far I have:
+
+- created a database table and loaded the data so we can analyse in SQL
+- generated country totals
+- put it all on github so that it is accessible
+
 ## Countries
 
 Note some interesting entries under "countries", such as:
@@ -39,20 +51,31 @@ these codes may be useful in helping match countries to geocode data.
 
 ## Categories
 
-The trade categories range from 
+As mentioned above I don't think we'll have time this weekend to look into the different categories, but here is a quick overview.
 
-Animal feed
-Crude vegetable matter, nes
+The trade categories range from: 
 
-Aircraft, spacecraft & parts
-Confidential items of trade
-Special transactions & commodities
-Crude minerals, nes
-Explosives & pyrotechnics
-Arms & ammunition
-Coal
-Iron ore & concentrates
-(could also look at other ores)
-Crude petroleum
-Confidential mineral ores
-Confidential organic chemicals
+- Animal feed to
+- Aircraft, spacecraft & parts
+
+and 
+
+- Arms & ammunition to
+- Medicaments (incl veterinary)
+
+There are some special categories:
+
+- Confidential items of trade
+- Confidential mineral ores
+- Confidential organic chemicals
+- Special transactions & commodities
+
+And here are some categories that I think could be interesting:
+
+- Alcoholic beverages
+- Coal
+- Crude petroleum
+- Iron ore & concentrates
+- (could also look at other ores)
+- Rice
+- Wheat
