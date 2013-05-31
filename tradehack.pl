@@ -27,7 +27,7 @@ while (<$fh>) {
         print qq{
 insert
 into    trade
-values  ('$direction',$year,'$country',$comm_code,'$commodity',$value)
+values  ("$direction", $year, "$country", $comm_code, "$commodity", $value)
 ;
 };
 
