@@ -1,5 +1,5 @@
 # GovHack 2013
-# Australian Trade Data 2006 - 2011
+# Australian Foreign Trade Data 2006 - 2011
 
 ## Aim
 
