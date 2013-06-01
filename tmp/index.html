@@ -4,7 +4,7 @@
     <title>Cartograms with d3 &amp; TopoJSON</title>
     <meta charset="utf-8">
     <meta property="og:image" content="placeholder.png">
-    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://d3js.org/d3.v3.js"></script>
     <script src="lib/colorbrewer.js"></script>
     <script src="lib/topojson.js"></script>
     <script src="cartogram.js"></script>
@@ -224,7 +224,7 @@
           "scale(" + [scale, scale] + ")");
       }
 
-      var proj = d3.geo.albersUsa(),
+      var proj = d3.geo.mercator(),
           topology,
           geometries,
           rawData,
@@ -246,6 +246,7 @@
           url = ["data",
             segmentized ? "us-states-segmentized.topojson" : "us-states.topojson"
           ].join("/");
+      url = "data/countries.topojson"
       d3.json(url, function(topo) {
         topology = topo;
         geometries = topology.objects.states.geometries;
