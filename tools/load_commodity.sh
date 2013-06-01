@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Load postgresql connection settings
-. pg_settings.sh
+. tools/pg_settings.sh
 
 set -x 
 
-sudo -u postgres psql -f - <<END_OF_SQL
+psql --host=$PG_HOST --port=$PG_PORT --username=$PG_USER -f - $PG_DB <<END_OF_SQL
 
 \connect govhack;
 
@@ -21,15 +21,15 @@ fi
 
 ogr2ogr -f PostgreSQL PG:"$OGR_PG_CONN" $TMP_COMMODITY_FILE
 
-sudo -u postgres psql -f - <<END_OF_SQL
+psql --host=$PG_HOST --port=$PG_PORT --username=$PG_USER -f - $PG_DB <<END_OF_SQL
 
 \connect govhack;
 
-ALTER TABLE commodity RENAME COLUMN field_1 to direction;
-ALTER TABLE commodity RENAME COLUMN field_2 to fy;
-ALTER TABLE commodity RENAME COLUMN field_3 to geounit;
-ALTER TABLE commodity RENAME COLUMN field_4 to commodity;
-ALTER TABLE commodity RENAME COLUMN field_5 to amount;
+ALTER TABLE commodity RENAME COLUMN "direction" TO direction;
+ALTER TABLE commodity RENAME COLUMN "financial  year" TO fy;
+ALTER TABLE commodity RENAME COLUMN "partner country" TO geounit;
+ALTER TABLE commodity RENAME COLUMN "commodity  sitc r4" TO commodity;
+ALTER TABLE commodity RENAME COLUMN "a\$000" TO amount;
 
 END_OF_SQL
 

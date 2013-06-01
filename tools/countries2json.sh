@@ -2,23 +2,23 @@
 
 
 # Load postgresql connection settings
-. pg_settings.sh
+. tools/pg_settings.sh
 
-set -x 
+set -x
 
 /bin/rm data/countries.geojson
 ogr2ogr \
-  -f GeoJSON countries.geojson \
+  -f GeoJSON data/countries.geojson \
   PG:"$OGR_PG_CONN" \
-  country \ 
-  -where "country.geounit in (select country from commodity)"
+  country \
+  -where "country.geounit in (select geounit from commodity)"
 
-/bin/rm data/commodity.geojson
+/bin/rm data/commodity.csv
 ogr2ogr \
-  -f CSV commodity.csv \
+  -f CSV data/commodity.csv \
   PG:"$OGR_PG_CONN" \
-  commodity \ 
-  -where "commodity.country in (select geounit from country)"
+  commodity \
+  -where "commodity.geounit in (select geounit from country)"
 
 /bin/rm data/countries.topojson
 topojson \
