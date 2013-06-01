@@ -21,8 +21,9 @@ ogr2ogr \
   -where "commodity.geounit in (select geounit from country)"
 
 /bin/rm data/countries.topojson
-topojson \
-  --id-property name \
+../topojson/bin/topojson \
+  --id-property geounit \
+  -p geounit \
   -o data/countries.topojson \
   data/countries.geojson
 
