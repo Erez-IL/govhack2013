@@ -1,0 +1,3 @@
+[submodule "d3-cartogram"]
+	path = d3-cartogram
+	url = git://github.com/shawnbot/d3-cartogram.git
