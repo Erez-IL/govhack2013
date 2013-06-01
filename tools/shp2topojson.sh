@@ -10,8 +10,7 @@ ogr2ogr \
 
 rm data/countries.topojson
 topojson \
-  --id-property su_a3 \
-  -p name \
+  --id-property name \
   -o data/countries.topojson \
   data/countries.geojson
 

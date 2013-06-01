@@ -8,6 +8,7 @@
     <script src="d3-cartogram/lib/colorbrewer.js"></script>
     <script src="d3-cartogram/lib/topojson.js"></script>
     <script src="d3-cartogram/cartogram.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
     <style type="text/css">
 
       body {
@@ -187,7 +188,7 @@
         .enter()
         .append("option")
           .attr("value", function(d) { return d.id; })
-          .text(function(d) { return d.name; });
+          .text(function(d) { return d.geounit; });
 
       var yearSelect = d3.select("#year")
         .on("change", function(e) {
@@ -250,10 +251,18 @@
       d3.json(url, function(topo) {
         topology = topo;
         geometries = topology.objects.countries.geometries;
-        d3.csv("d3-cartogram/data/nst_2011.csv", function(data) {
+        d3.csv("data/commodity.csv", function(data) {
+
+          // var geounits_in_csv = _(_(data).map(function(d) { return d.GEOUNIT; }));
+          // topology.objects.countries.geometries = _(topology.objects.countries.geometries).select(function(g) {
+          //   _(geounits_in_csv).contains(g.id);
+          // });
+          // geometries = topology.objects.countries.geometries;
+          // debugger;
+
           rawData = data;
           dataById = d3.nest()
-            .key(function(d) { return d.NAME; })
+            .key(function(d) { return d.GEOUNIT; })
             .rollup(function(d) { return d[0]; })
             .map(data);
           init();
@@ -270,7 +279,13 @@
           .append("path")
             .attr("class", "country")
             .attr("id", function(d) {
-              return d.properties.NAME;
+              if (d.properties === undefined) {
+                debugger;
+              }
+              if (!d.properties.GEOUNIT) {
+                debugger;
+              }
+              return d.properties.GEOUNIT;
             })
             .attr("fill", "#fafafa")
             .attr("d", path);
@@ -297,7 +312,7 @@
 
         countries.select("title")
           .text(function(d) {
-            return d.properties.NAME;
+            return d.properties.GEOUNIT;
           });
       }
 
@@ -344,7 +359,7 @@
         countries.data(features)
           .select("title")
             .text(function(d) {
-              return [d.properties.NAME, fmt(value(d))].join(": ");
+              return [d.properties.GEOUNIT, fmt(value(d))].join(": ");
             });
 
         countries.transition()
