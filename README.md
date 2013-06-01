@@ -1,6 +1,12 @@
 # GovHack 2013
 # Australian Foreign Trade Data 2006 - 2011
 
+## Getting started
+
+    git clone git@github.com:chrisberkhout/govhack2013.git && cd govhack2013
+    git submodule init
+    git submodule update
+
 ## Aim
 
 The aim of this project is to create some visualisations and tell a story with
