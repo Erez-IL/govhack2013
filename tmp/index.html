@@ -249,7 +249,7 @@
       d3.json(url, function(topo) {
         topology = topo;
         geometries = topology.objects.states.geometries;
-        d3.csv("data/nst_2011.csv", function(data) {
+        d3.csv("data/commodity.csv", function(data) {
           rawData = data;
           dataById = d3.nest()
             .key(function(d) { return d.NAME; })
@@ -311,7 +311,7 @@
         var defaultValue = 1;
 
         var value = function(d) {
-            var key = "CENSUS2010POP";
+            var key = "AMOUNT";
               return d.properties ? d.properties[key] : defaultValue;
             };
 
