@@ -8,10 +8,9 @@ ogr2ogr \
   -where "" \
   data/countries.geojson ne_110m_admin_0_countries/ne_110m_admin_0_countries.shp
 
-rm data/countries.json
+rm data/countries.topojson
 topojson \
   --id-property su_a3 \
-  -p name=NAME \
   -p name \
   -o data/countries.topojson \
   data/countries.geojson
