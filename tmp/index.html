@@ -4,7 +4,7 @@
     <title>Cartograms with d3 &amp; TopoJSON</title>
     <meta charset="utf-8">
     <meta property="og:image" content="placeholder.png">
-    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://d3js.org/d3.v3.js"></script>
     <script src="lib/colorbrewer.js"></script>
     <script src="lib/topojson.js"></script>
     <script src="cartogram.js"></script>
@@ -224,7 +224,7 @@
           "scale(" + [scale, scale] + ")");
       }
 
-      var proj = d3.geo.albersUsa(),
+      var proj = d3.geo.mercator(),
           topology,
           geometries,
           rawData,
@@ -246,10 +246,11 @@
           url = ["data",
             segmentized ? "us-states-segmentized.topojson" : "us-states.topojson"
           ].join("/");
+      url = "data/countries.topojson"
       d3.json(url, function(topo) {
         topology = topo;
         geometries = topology.objects.states.geometries;
-        d3.csv("data/nst_2011.csv", function(data) {
+        d3.csv("data/commodity.csv", function(data) {
           rawData = data;
           dataById = d3.nest()
             .key(function(d) { return d.NAME; })
@@ -296,7 +297,7 @@
 
         states.select("title")
           .text(function(d) {
-            return d.properties.NAME;
+            return d.properties && d.properties.NAME ? d.properties.NAME : "UNKNOWN";
           });
       }
 
@@ -304,22 +305,27 @@
         var start = Date.now();
         body.classed("updating", true);
 
-        var key = field.key.replace("%d", year),
-            fmt = (typeof field.format === "function")
+        var fmt = (typeof field.format === "function")
               ? field.format
-              : d3.format(field.format || ","),
-            value = function(d) {
-              return d.properties ? +d.properties[key] : 1;
-              //return +d.properties[key];
-            },
-            values = states.data()
+              : d3.format(field.format || ",");
+
+        var defaultValue = 1;
+
+        var value = function(d) {
+            var key = "AMOUNT";
+              return d.properties ? d.properties[key] : defaultValue;
+            };
+
+        var values = states.data()
               .map(value)
               .filter(function(n) {
                 return !isNaN(n);
               })
-              .sort(d3.ascending),
-            lo = values[0],
-            hi = values[values.length - 1];
+              .sort(d3.ascending);
+
+        var lo = values[0];
+
+        var hi = values[values.length - 1];
 
         var color = d3.scale.linear()
           .range(colors)
