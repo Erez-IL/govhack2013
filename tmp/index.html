@@ -296,7 +296,7 @@
 
         states.select("title")
           .text(function(d) {
-            return d.properties.NAME;
+            return d.properties && d.properties.NAME ? d.properties.NAME : "UNKNOWN";
           });
       }
 
@@ -308,8 +308,9 @@
             fmt = (typeof field.format === "function")
               ? field.format
               : d3.format(field.format || ","),
+            defaultValue = 1,
             value = function(d) {
-              return d.properties ? +d.properties[key] : 1;
+              return d.properties ? +d.properties[key] : defaultValue;
               //return +d.properties[key];
             },
             values = states.data()
