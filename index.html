@@ -8,6 +8,7 @@
     <script src="d3-cartogram/lib/colorbrewer.js"></script>
     <script src="d3-cartogram/lib/topojson.js"></script>
     <script src="d3-cartogram/cartogram.js"></script>
+    <!-- <script src="topojson.js"></script> -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
     <style type="text/css">
 
@@ -99,15 +100,30 @@
     </div>
     <script>
 
+      //var proj = d3.geo.mercator();
+
+      //var path = d3.geo.path().projection(proj);
+
       var cartogram = d3.cartogram()
         .projection(d3.geo.mercator())
+        .properties(function(d) { 
+          return d.id;
+        })
         .value(function(d) {
           return Math.random() * 100;
         });
-      d3.json("data/countries.topojson", function(raw) {
+
+//      var cartogram = d3.cartogram()
+//        .projection(proj)
+//        .value(function(d) {
+//          return Math.random() * 100;
+//        });
+      d3.json("data/countries.topojson", function(error, raw) {
+        //var features = topojson.feature(raw, raw.objects.countries);
         var features = cartogram.features(raw, raw.objects.countries.geometries);
+        console.log(features);
         d3.select("svg").selectAll("path")
-          .data(features)
+          .data(features.features)
           .enter()
           .append("path")
             .attr("d", cartogram.path);
