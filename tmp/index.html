@@ -304,23 +304,23 @@
         var start = Date.now();
         body.classed("updating", true);
 
-        var key = field.key.replace("%d", year),
-            fmt = (typeof field.format === "function")
+        var key = "CENSUS2010POP";
+        var fmt = (typeof field.format === "function")
               ? field.format
-              : d3.format(field.format || ","),
-            defaultValue = 1,
-            value = function(d) {
+              : d3.format(field.format || ",");
+        var defaultValue = 1;
+        var value = function(d) {
               return d.properties ? +d.properties[key] : defaultValue;
               //return +d.properties[key];
-            },
-            values = states.data()
+            };
+        var values = states.data()
               .map(value)
               .filter(function(n) {
                 return !isNaN(n);
               })
-              .sort(d3.ascending),
-            lo = values[0],
-            hi = values[values.length - 1];
+              .sort(d3.ascending);
+        var lo = values[0];
+        var hi = values[values.length - 1];
 
         var color = d3.scale.linear()
           .range(colors)
