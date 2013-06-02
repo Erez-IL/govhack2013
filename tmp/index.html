@@ -321,10 +321,9 @@
         countries.data(features)
           .select("title")
             .text(function(d) {
-              console.info('text', d);
               if (d.id != "Australia") {
                   var val = (parseInt(value(d)) / 1000).toPrecision(2);
-                  var val = "$" + val + "M AUD";
+                  val = "$" + val + "M AUD";
                   return d.properties ? [d.properties.geounit, val].join(": ") : "UNKNOWN";
               } else {
                   return "Australia";
@@ -335,7 +334,8 @@
           .duration(750)
           .ease("linear")
           .attr("fill", function(d) {
-            return color(value(d));
+            var val = value(d);
+            return (val == 0) ? "#FFFFFF" : color(val);
           })
           .attr("d", carto.path);
 
@@ -404,6 +404,7 @@
         }
       }
 
+      /*
       time = 3;
       years.forEach(function(year) {
         setTimeout(function() {
@@ -417,6 +418,7 @@
         console.log("end");
         location.hash = "";
       },time*1000);
+      */
       
 
     </script>
