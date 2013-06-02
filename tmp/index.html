@@ -19,7 +19,7 @@
       }
 
       #container {
-        width: 800px;
+        width: 1100px;
         margin: 20px auto;
       }
 
@@ -188,7 +188,7 @@
 
       var map = d3.select("#map"),
           zoom = d3.behavior.zoom()
-            .translate([-138, 32])
+            //.translate([-138, 32])
             //.scale(1.54)
             //.scaleExtent([0.5, 10.0])
             .on("zoom", updateZoom),
@@ -345,8 +345,14 @@
         countries.data(features)
           .select("title")
             .text(function(d) {
-              return d.properties ? [d.properties.geounit, fmt(value(d))].join(": ") : "UNKNOWN";
-              //return [d.properties.geounit, fmt(value(d))].join(": ");
+              console.info('text', d);
+              if (d.id != "Australia") {
+                  var val = (parseInt(value(d)) / 1000).toPrecision(2);
+                  var val = "$" + val + "M AUD";
+                  return d.properties ? [d.properties.geounit, val].join(": ") : "UNKNOWN";
+              } else {
+                  return "Australia";
+              }
             });
 
         countries.transition()
