@@ -1,120 +1,230 @@
-DIRECTION,FY,NAME,COMMODITY,AMOUNT
-Exports,FY2011,American Samoa,112 Alcoholic beverages,13
-Exports,FY2011,Angola,112 Alcoholic beverages,14
-Exports,FY2011,Antarctica,112 Alcoholic beverages,38
-Exports,FY2011,Argentina,112 Alcoholic beverages,171
-Exports,FY2011,Armenia,112 Alcoholic beverages,77
-Exports,FY2011,Austria,112 Alcoholic beverages,1014
-Exports,FY2011,Bahamas,112 Alcoholic beverages,85
-Exports,FY2011,Bahrain,112 Alcoholic beverages,424
-Exports,FY2011,Bangladesh,112 Alcoholic beverages,200
-Exports,FY2011,Barbados,112 Alcoholic beverages,214
-Exports,FY2011,Belarus,112 Alcoholic beverages,109
-Exports,FY2011,Belgium,112 Alcoholic beverages,29703
-Exports,FY2011,Benin,112 Alcoholic beverages,71
-Exports,FY2011,Bermuda,112 Alcoholic beverages,340
-Exports,FY2011,Brazil,112 Alcoholic beverages,2696
-Exports,FY2011,Bulgaria,112 Alcoholic beverages,51
-Exports,FY2011,Burma (Rep of the Union of Myanmar),112 Alcoholic beverages,9
-Exports,FY2011,Burma (Rep of the Union of Myanmar),112 Alcoholic beverages,57
-Exports,FY2011,Cambodia,112 Alcoholic beverages,539
-Exports,FY2011,Canada,112 Alcoholic beverages,205712
-Exports,FY2011,Cayman Islands,112 Alcoholic beverages,81
-Exports,FY2011,Chile,112 Alcoholic beverages,184
-Exports,FY2011,China,112 Alcoholic beverages,179360
-Exports,FY2011,Colombia,112 Alcoholic beverages,221
-Exports,FY2011,Cook Islands,112 Alcoholic beverages,977
-Exports,FY2011,Costa Rica,112 Alcoholic beverages,132
-Exports,FY2011,Croatia,112 Alcoholic beverages,15
-Exports,FY2011,Cyprus,112 Alcoholic beverages,18
-Exports,FY2011,Czech Republic,112 Alcoholic beverages,1692
-Exports,FY2011,Denmark,112 Alcoholic beverages,31986
-Exports,FY2011,Dominica,112 Alcoholic beverages,98
-Exports,FY2011,Dominican Republic,112 Alcoholic beverages,58
-Exports,FY2011,East Timor,112 Alcoholic beverages,792
-Exports,FY2011,Estonia,112 Alcoholic beverages,757
-Exports,FY2011,Federated States of Micronesia,112 Alcoholic beverages,41
-Exports,FY2011,Fiji,112 Alcoholic beverages,8596
-Exports,FY2011,Finland,112 Alcoholic beverages,13133
-Exports,FY2011,France,112 Alcoholic beverages,8951
-Exports,FY2011,French Polynesia,112 Alcoholic beverages,356
-Exports,FY2011,Germany,112 Alcoholic beverages,36438
-Exports,FY2011,Ghana,112 Alcoholic beverages,84
-Exports,FY2011,Gibraltar,112 Alcoholic beverages,22
-Exports,FY2011,Greece,112 Alcoholic beverages,46
-Exports,FY2011,Guam,112 Alcoholic beverages,795
-Exports,FY2011,Hong Kong (SAR of China),112 Alcoholic beverages,67659
-Exports,FY2011,Iceland,112 Alcoholic beverages,328
-Exports,FY2011,India,112 Alcoholic beverages,3346
-Exports,FY2011,Indonesia,112 Alcoholic beverages,4182
-Exports,FY2011,Iraq,112 Alcoholic beverages,259
-Exports,FY2011,Ireland,112 Alcoholic beverages,34316
-Exports,FY2011,Israel,112 Alcoholic beverages,468
-Exports,FY2011,Italy,112 Alcoholic beverages,725
-Exports,FY2011,Jamaica,112 Alcoholic beverages,375
-Exports,FY2011,Japan,112 Alcoholic beverages,44474
-Exports,FY2011,Kenya,112 Alcoholic beverages,149
-Exports,FY2011,Kiribati,112 Alcoholic beverages,86
-Exports,FY2011,Laos,112 Alcoholic beverages,864
-Exports,FY2011,Latvia,112 Alcoholic beverages,4346
-Exports,FY2011,Lithuania,112 Alcoholic beverages,59
-Exports,FY2011,Macau (SAR of China),112 Alcoholic beverages,1138
-Exports,FY2011,Malaysia,112 Alcoholic beverages,30561
-Exports,FY2011,Maldives,112 Alcoholic beverages,549
-Exports,FY2011,Malta,112 Alcoholic beverages,230
-Exports,FY2011,Marshall Islands,112 Alcoholic beverages,88
-Exports,FY2011,Mauritius,112 Alcoholic beverages,193
-Exports,FY2011,Mexico,112 Alcoholic beverages,3349
-Exports,FY2011,Mongolia,112 Alcoholic beverages,157
-Exports,FY2011,Morocco,112 Alcoholic beverages,15
-Exports,FY2011,Nauru,112 Alcoholic beverages,104
-Exports,FY2011,Nepal,112 Alcoholic beverages,477
-Exports,FY2011,Netherlands,112 Alcoholic beverages,75830
-Exports,FY2011,New Caledonia,112 Alcoholic beverages,1892
-Exports,FY2011,New Zealand,112 Alcoholic beverages,107715
-Exports,FY2011,Nicaragua,112 Alcoholic beverages,3
-Exports,FY2011,Nigeria,112 Alcoholic beverages,507
-Exports,FY2011,Niue,112 Alcoholic beverages,17
-Exports,FY2011,Norfolk Island,112 Alcoholic beverages,499
-Exports,FY2011,Norway,112 Alcoholic beverages,10013
-Exports,FY2011,Oman,112 Alcoholic beverages,309
-Exports,FY2011,Palau,112 Alcoholic beverages,2
-Exports,FY2011,Panama,112 Alcoholic beverages,206
-Exports,FY2011,Papua New Guinea,112 Alcoholic beverages,3858
-Exports,FY2011,Peru,112 Alcoholic beverages,57
-Exports,FY2011,Philippines,112 Alcoholic beverages,5058
-Exports,FY2011,Poland,112 Alcoholic beverages,3028
-Exports,FY2011,Puerto Rico,112 Alcoholic beverages,311
-Exports,FY2011,Qatar,112 Alcoholic beverages,1011
-Exports,FY2011,Republic of Korea,112 Alcoholic beverages,11430
-Exports,FY2011,Romania,112 Alcoholic beverages,262
-Exports,FY2011,Russian Federation,112 Alcoholic beverages,1989
-Exports,FY2011,Samoa,112 Alcoholic beverages,342
-Exports,FY2011,Senegal,112 Alcoholic beverages,41
-Exports,FY2011,Serbia,112 Alcoholic beverages,44
-Exports,FY2011,Seychelles,112 Alcoholic beverages,33
-Exports,FY2011,Singapore,112 Alcoholic beverages,52012
-Exports,FY2011,Slovak Republic,112 Alcoholic beverages,9
-Exports,FY2011,Slovenia,112 Alcoholic beverages,176
-Exports,FY2011,Solomon Islands,112 Alcoholic beverages,673
-Exports,FY2011,South Africa,112 Alcoholic beverages,2775
-Exports,FY2011,Spain,112 Alcoholic beverages,1568
-Exports,FY2011,Sri Lanka,112 Alcoholic beverages,827
-Exports,FY2011,Sweden,112 Alcoholic beverages,32264
-Exports,FY2011,Switzerland,112 Alcoholic beverages,3316
-Exports,FY2011,Syria,112 Alcoholic beverages,80
-Exports,FY2011,Taiwan,112 Alcoholic beverages,9733
-Exports,FY2011,Tanzania,112 Alcoholic beverages,29
-Exports,FY2011,Thailand,112 Alcoholic beverages,16675
-Exports,FY2011,Tonga,112 Alcoholic beverages,325
-Exports,FY2011,Trinidad & Tobago,112 Alcoholic beverages,453
-Exports,FY2011,Turkey,112 Alcoholic beverages,243
-Exports,FY2011,Tuvalu,112 Alcoholic beverages,138
-Exports,FY2011,Uganda,112 Alcoholic beverages,105
-Exports,FY2011,Ukraine,112 Alcoholic beverages,248
-Exports,FY2011,United Arab Emirates,112 Alcoholic beverages,14867
-Exports,FY2011,United Kingdom,112 Alcoholic beverages,464834
-Exports,FY2011,United States,112 Alcoholic beverages,526601
-Exports,FY2011,Uruguay,112 Alcoholic beverages,18
-Exports,FY2011,Vanuatu,112 Alcoholic beverages,3142
-Exports,FY2011,Vietnam,112 Alcoholic beverages,9830
+Uganda,0,0,0,0,0,0
+Antarctica,0,0,0,0,0,0
+Sudan,56,337,97,0,136,0
+Mongolia,0,0,0,0,0,0
+New Zealand,34923,36759,36693,27806,33203,22692
+US Outlying Islands,0,0,0,0,0,0
+Wallis & Futuna Island,23,19,28,26,23,27
+Republic of Congo,0,0,0,0,0,0
+Sierra Leone,0,0,0,0,0,0
+Sao Tome & Principe,0,0,0,0,0,0
+Bhutan,0,0,0,0,0,4
+Israel,20,0,0,0,0,0
+Kyrgyzstan,0,0,0,0,0,0
+Eritrea,0,0,0,0,0,0
+Gibraltar,0,0,0,0,0,0
+Malaysia,2166,1796,1775,2398,3569,2516
+American Samoa,0,0,0,0,0,0
+Netherlands Antilles,0,0,0,0,0,0
+Puerto Rico,0,0,0,0,0,0
+Turkmenistan,0,0,0,0,0,0
+Anguilla,0,0,0,0,0,0
+St Helena,0,0,0,0,0,0
+Fiji,851,522,343,360,296,127
+Lesotho,0,0,0,0,0,0
+Niue,0,0,0,0,0,0
+Comoros,0,0,0,0,0,0
+Kazakhstan,0,0,0,0,0,0
+Montenegro,0,0,0,0,0,0
+Gabon,0,0,0,0,0,0
+Guam,16,8,0,28,33,101
+Guinea-Bissau,0,0,0,0,0,0
+No Country Details,0,0,0,0,0,0
+Benin,0,0,0,0,0,0
+Paraguay,0,0,0,0,0,0
+Afghanistan,158,0,0,0,0,0
+Estonia,0,0,0,0,0,0
+Qatar,53,143,133,170,110,63
+Central African Republic,0,0,0,0,0,0
+South Africa,8,200,165,21,102,119
+French Antilles,0,0,0,0,0,0
+Cocos Keeling Islands,13,6,0,0,0,0
+Latvia,0,0,0,0,0,0
+Suriname,0,0,0,0,0,0
+Swaziland,0,0,86,173,202,0
+Dominica,0,0,0,0,0,0
+Cote d'Ivoire,0,0,0,0,0,0
+St Vincent & Grenadines,0,0,0,0,0,0
+Cape Verde,0,0,0,0,0,0
+Indonesia,1156,1486,912,1074,1055,850
+Burma (Rep of the Union of Myanmar),0,0,3,5,0,5
+Colombia,0,55,423,131,0,0
+India,46,66,121,32,98,92
+Guyana,0,0,0,0,0,0
+Seychelles,0,0,0,3,0,0
+Ghana,0,0,0,0,0,0
+Croatia,11,0,0,0,0,0
+Slovak Republic,0,0,0,0,0,0
+Serbia & Montenegro,0,0,0,0,0,0
+Netherlands,1129,1040,1563,1054,898,968
+United Arab Emirates,1340,1620,1934,1668,1451,1099
+Libya,64,0,0,558,0,0
+Greece,0,0,7,0,0,0
+Haiti,0,0,0,0,0,0
+Honduras,0,0,0,0,0,0
+International Waters,0,0,0,0,0,0
+Montserrat,0,0,0,0,0,0
+Bulgaria,0,0,0,0,0,0
+Cyprus,0,0,0,0,0,0
+Morocco,0,0,0,0,0,0
+Brunei,35,28,27,29,0,16
+Bermuda,0,0,0,0,0,0
+Nigeria,0,0,0,0,0,0
+Liberia,0,0,0,0,0,0
+Malawi,0,0,0,0,0,0
+Tunisia,0,0,0,0,0,0
+St Pierre & Miquelon,0,0,0,0,0,0
+Reunion,0,0,0,0,0,0
+Federated States of Micronesia,1,0,7,1,3,1
+Bahrain,92,103,117,103,97,82
+Cambodia,3,2,1,0,2,13
+Belize,0,0,0,0,0,0
+Confidential (Alumina Special Case),0,0,0,0,0,0
+Kuwait,201,164,238,188,122,30
+Cook Islands,0,0,2,0,0,0
+Spain,5,11,5,39,39,41
+Ukraine,0,0,0,0,0,0
+Democratic People's Republic of Korea,0,0,0,0,0,0
+Bahamas,0,0,0,0,0,0
+Denmark,728,601,685,642,710,434
+Serbia,0,0,0,0,0,0
+Solomon Islands,0,0,0,0,0,1
+Australia,0,0,0,0,0,0
+El Salvador,0,0,0,28,0,0
+Uruguay,0,0,0,0,0,0
+Iraq,0,0,0,0,0,0
+Macau (SAR of China),0,0,0,0,0,0
+Yemen,227,186,263,305,195,51
+Senegal,0,0,0,0,0,0
+Djibouti,0,25,24,0,0,0
+Switzerland,0,0,0,109,51,43
+Bolivia,0,0,0,0,0,0
+FYR Macedonia,0,0,0,0,0,0
+Grenada,0,0,0,0,0,0
+Rwanda,0,0,0,0,0,0
+Singapore,2269,2886,2598,2942,2503,1774
+Nauru,14,9,2,0,0,1
+Egypt,3,0,0,34,0,0
+Thailand,1203,418,574,932,629,572
+Poland,0,0,0,0,3,0
+geounit,amount2006,amount2007,amount2008,amount2009,amount2010,amount2011
+China,185,407,244,477,476,443
+Mauritania,0,0,0,0,0,0
+Kiribati,27,14,36,13,11,8
+Canada,4960,5887,4498,4018,3127,1674
+Hungary,0,0,0,0,17,0
+Luxembourg,0,0,0,0,0,0
+Syria,0,0,0,0,0,0
+Japan,5732,5113,4915,7448,4369,3117
+Northern Marianas,0,0,0,0,0,0
+Uzbekistan,0,0,0,0,0,0
+Angola,0,0,0,0,0,0
+Jordan,246,492,321,574,266,98
+Palau,0,0,0,0,0,0
+Turks & Caicos Islands,0,0,0,0,0,0
+Dominican Republic,0,93,255,0,0,0
+Ireland,150,89,22,57,0,0
+Jamaica,0,0,0,0,0,0
+Venezuela,0,0,0,0,0,0
+Niger,0,0,0,0,0,0
+Chile,42,0,270,104,0,8
+Mexico,0,0,0,0,0,0
+Moldova,0,0,0,0,0,0
+Norway,2323,2157,2222,2271,1939,1266
+Belgium,689,520,459,429,382,0
+Falkland Islands,0,0,0,0,0,0
+Norfolk Island,15,15,44,17,16,18
+Oman,231,177,247,287,33,20
+Austria,0,0,0,0,0,0
+Guinea,0,0,0,0,0,0
+US Virgin Islands,0,0,0,0,0,0
+Western Sahara,0,0,0,0,0,0
+Namibia,0,0,0,0,0,0
+Burundi,0,0,0,0,0,0
+Ecuador,0,108,379,0,5,0
+UK Virgin Islands,0,0,0,0,0,0
+Burkina Faso,0,0,0,0,0,0
+Saudi Arabia,1078,1137,1017,1859,599,381
+Papua New Guinea,537,412,525,1020,651,1657
+Iceland,0,0,0,0,0,0
+Nepal,0,0,0,0,0,0
+Somalia,0,0,0,0,0,0
+Barbados,3,0,0,0,0,0
+Czech Republic,0,0,0,0,0,0
+Philippines,727,554,681,1107,1886,1101
+Panama,0,0,500,449,28,0
+Lithuania,0,0,0,0,0,0
+Ethiopia,0,0,0,0,0,0
+Vanuatu,28,33,38,74,31,60
+United Kingdom,11983,11088,7505,4371,3987,2179
+Maldives,245,249,180,186,92,117
+Georgia,0,0,0,0,0,0
+Bangladesh,71,66,49,47,40,42
+Armenia,0,0,0,0,0,0
+Tajikistan,0,0,0,0,0,0
+Pakistan,56,11,0,0,0,0
+Iran,0,0,0,0,0,0
+Russian Federation,368,870,383,542,447,244
+Argentina,0,0,0,0,23,31
+Mauritius,80,66,217,280,392,430
+Cameroon,0,0,0,0,0,0
+Lebanon,20,1,226,25,3,0
+Laos,0,0,0,5,0,0
+Zambia,0,0,0,0,0,0
+Belarus,0,0,0,0,0,0
+France,111,19,5,0,0,0
+New Caledonia,580,397,421,302,422,376
+Costa Rica,0,0,0,0,0,0
+British Indian Ocean Territory,0,0,0,0,0,0
+Albania,0,0,0,0,0,0
+Marshall Islands,4,0,0,5,6,0
+Christmas Island,1,0,0,0,31,24
+Nicaragua,0,0,0,0,0,0
+Togo,0,0,0,0,0,0
+United States,8941,10850,1787,3286,11930,3769
+Madagascar,0,0,0,0,0,0
+Mali,0,0,0,0,0,0
+Samoa,37,39,29,29,30,19
+Turkey,0,0,0,35,0,152
+Italy,142,57,147,61,29,0
+Portugal,0,0,0,0,0,17
+Democratic Republic of the Congo,0,0,0,0,0,0
+Hong Kong (SAR of China),1471,1458,1279,1153,1011,1049
+St Kitts & Nevis,0,0,0,0,0,0
+St Lucia,0,0,0,0,0,0
+Gambia,0,0,0,0,0,0
+Slovenia,0,0,0,0,0,0
+Tanzania,0,0,0,0,0,0
+Unknown,0,0,0,0,0,0
+Sri Lanka,199,389,390,234,209,212
+Sweden,444,193,292,453,46,169
+Pitcairn Island,0,0,0,0,0,0
+Cayman Islands,0,0,0,0,0,0
+Tonga,36,7,20,35,11,2
+Romania,5,0,134,0,0,0
+Bosnia-Herzegovina,0,0,0,0,0,0
+Malta,0,0,0,0,0,0
+Equatorial Guinea,0,0,0,0,0,0
+Peru,986,694,99,0,250,33
+French Guiana,0,0,0,0,0,0
+Tuvalu,2,4,2,1,1,0
+Vietnam,79,83,163,83,69,96
+Botswana,0,0,0,0,0,0
+East Timor,0,0,10,0,0,0
+Finland,695,649,74,85,99,105
+Zimbabwe,0,0,0,0,0,0
+Chad,0,0,0,0,0,0
+Brazil,4,0,29,0,0,0
+French Polynesia,62,54,60,108,65,82
+Azerbaijan,0,0,0,0,0,0
+Ships Stores,3,9,1,47,10,0
+Algeria,0,0,0,0,0,0
+Guatemala,62,201,156,0,63,0
+Trinidad & Tobago,0,0,0,0,0,0
+Germany,3010,921,819,586,1533,2228
+Kenya,1,0,0,0,6,12
+Taiwan,135,133,84,90,114,65
+Antigua & Barbuda,0,0,0,0,0,0
+Mozambique,41,0,48,0,0,0
+Republic of Korea,326,1046,884,1289,1252,1279
+Cuba,0,0,0,0,0,0
