@@ -11,7 +11,9 @@ ogr2ogr \
   -f GeoJSON data/countries.geojson \
   PG:"$OGR_PG_CONN" \
   country \
-  -where "country.geounit in (select geounit from commodity)"
+
+  #-where "country.geounit in (select geounit from commodity)"
+  #-where "country.geounit in (select geounit from commodity) and geounit ilike '%p%'"
 
 /bin/rm data/commodity.csv
 ogr2ogr \
@@ -22,6 +24,7 @@ ogr2ogr \
 
 /bin/rm data/countries.topojson
 topojson \
+   --simplify-proportion 0.2 \
   --id-property geounit \
   -p geounit \
   -o data/countries.topojson \
