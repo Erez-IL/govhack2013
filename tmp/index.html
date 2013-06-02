@@ -204,9 +204,9 @@
 
       var map = d3.select("#map"),
           zoom = d3.behavior.zoom()
-            .translate([-38, 32])
-            .scale(.94)
-            .scaleExtent([0.5, 10.0])
+            .translate([-138, 32])
+            //.scale(1.54)
+            //.scaleExtent([0.5, 10.0])
             .on("zoom", updateZoom),
           layer = map.append("g")
             .attr("id", "layer"),
@@ -246,11 +246,14 @@
           url = ["data",
             segmentized ? "us-states-segmentized.topojson" : "us-states.topojson"
           ].join("/");
-      url = "data/countries.topojson"
+      //url = "data/countries.topojson"
+      url = "data/test.topojson"
       d3.json(url, function(topo) {
         topology = topo;
         geometries = topology.objects.states.geometries;
-        d3.csv("data/commodity.csv", function(data) {
+        var csv = "data/commodity.csv";
+        //var csv = "data/nst_2011.csv";
+        d3.csv(csv, function(data) {
           rawData = data;
           dataById = d3.nest()
             .key(function(d) { return d.NAME; })
