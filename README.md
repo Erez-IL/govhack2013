@@ -29,43 +29,38 @@ The data is for __Financial Year__ and the amounts are in __thousands of Austral
 
 ## Approach
 
-I think we are best concentrating on overall country data and maybe even
-limiting that to our 10 largest trading partners.
-
-If (and I think it's a big if) we have time, we could look at other things, but I
-think we are best getting something displayed visually as quickly as possible
-and trying to make a video to explain it.
+Look at ways that we could map the data to give a good visual representation.
+We have looked at both specific categories as well as overall country data.
 
 ## Plan
 
-So far I have:
+We did the following:
 
 - written some Perl to manipulate the data
 - created a database table and loaded the data so we can analyse it in SQL
 - generated country totals
 - put it all on github so that it is accessible
-
-What else I think needs to be done:
-
 - make some more data summaries
-- limit the data to our top 10 trading partners
-- if we want to use a
+- did some data cleansing
+- matched the country names to country codes and geocodes so that we could use
+it with mapping tools
+- created a
 [Choropleth map](http://en.wikipedia.org/wiki/Choropleth_map)
-then select a colour progression and determine what number ranges move from
-one colour to the next
-- display data visually (e.g. overlaying a map of the world, maybe as some sort of
-[Choropleth map](http://en.wikipedia.org/wiki/Choropleth_map)
+(or a "heat" map) to show which countries are our major trading partners
+- created a [Cartogram](http://en.wikipedia.org/wiki/Cartogram) to show
+countries sized according to their trade in particular commodities
+- made a video explaining what we have done
 
-What I will do:
+## Data
 
-- Make a template for a video of the data
-- Finalise a video based on the visualisations
+Once the data was imported into a database it was interesting to look at the
+data to better understand it and find any anomalies.
 
 ## Countries
 
 Note some interesting entries under "countries", such as:
 - Antartica
-- Australia (I really don't know how that got there!)
+- Australia (that doesn't look right considering this is meant to be foreign trade!)
 - Confidential (Alumina Special Case)
 - International Waters
 - No Country Details
@@ -88,9 +83,6 @@ and specifically
 these codes may be useful in helping match countries to geocode data.
 
 ## Categories
-
-As mentioned above I don't think we'll have time this weekend to look into the
-different categories, but here is a quick overview.
 
 The trade categories range from: 
 
