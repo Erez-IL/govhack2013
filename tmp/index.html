@@ -246,12 +246,16 @@
           url = ["data",
             segmentized ? "us-states-segmentized.topojson" : "us-states.topojson"
           ].join("/");
-      //url = "data/countries.topojson"
       url = "data/test.topojson"
+      url = "data/countries.topojson"
+      url = "../data/countries.topojson"
       d3.json(url, function(topo) {
         topology = topo;
         geometries = topology.objects.states.geometries;
         var csv = "data/commodity.csv";
+        var csv = "data/alcoholic_exports.csv";
+        var csv = "data/alcoholic_exports_2011.csv";
+        //var csv = "data/test.csv";
         //var csv = "data/nst_2011.csv";
         d3.csv(csv, function(data) {
           rawData = data;

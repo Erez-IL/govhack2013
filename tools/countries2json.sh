@@ -18,10 +18,10 @@ ogr2ogr \
   -f CSV data/commodity.csv \
   PG:"$OGR_PG_CONN" \
   commodity \
-  -where "commodity.geounit in (select geounit from country)"
+  -where "geounit NOT IN ('Australia') AND commodity.geounit in (select geounit from country)"
 
 /bin/rm data/countries.topojson
-../topojson/bin/topojson \
+topojson \
   --id-property geounit \
   -p geounit \
   -o data/countries.topojson \
