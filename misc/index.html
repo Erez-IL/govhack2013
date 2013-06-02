@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>US Heat map - jsFiddle demo</title>
+  
+  <script type='text/javascript' src='/js/lib/dummy.js'></script>
+  <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  
+  <style type='text/css'>
+    
+  </style>
+  
+</head>
+<body>
+  <script src="http://www.ammap.com/lib/ammap.js" type="text/javascript"></script>
+<script src="http://www.ammap.com/lib/maps/js/worldLow.js" type="text/javascript"></script>
+<div id="mapdiv" style="width: 100%; height: 600px;"></div>
+  
+
+
+<script type='text/javascript'>//<![CDATA[ 
+
+var map;
+
+AmCharts.ready(function() {
+    map = new AmCharts.AmMap();
+    map.pathToImages = "http://www.ammap.com/lib/images/";
+    //map.panEventsEnabled = true; // this line enables pinch-zooming and dragging on touch devices
+    map.colorSteps = 10;
+    map.balloon.color = "#000000";
+    var dataProvider = {
+        mapVar: AmCharts.maps.worldLow,
+
+        areas: [
+{ id: "AE", value: 980182 },
+{ id: "AF", value: 11977 },
+{ id: "AG", value: 209 },
+{ id: "AI", value: 96 },
+{ id: "AL", value: 551 },
+{ id: "AM", value: 9836 },
+{ id: "AN", value: -2234 },
+{ id: "AO", value: 4683 },
+{ id: "AQ", value: 7651 },
+{ id: "AR", value: 39525 },
+{ id: "AS", value: 12955 },
+{ id: "AT", value: -934462 },
+{ id: "AU", value: -630804 },
+{ id: "AZ", value: 8583 },
+{ id: "BA", value: 1469 },
+{ id: "BB", value: 4534 },
+{ id: "BD", value: 194493 },
+{ id: "BE", value: -438409 },
+{ id: "BF", value: 2317 },
+{ id: "BG", value: 64788 },
+{ id: "BH", value: -13273 },
+{ id: "BI", value: 10 },
+{ id: "BJ", value: 575 },
+{ id: "BM", value: 2091 },
+{ id: "BN", value: -988948 },
+{ id: "BO", value: -5241 },
+{ id: "BR", value: 163440 },
+{ id: "BS", value: 1961 },
+{ id: "BT", value: 42 },
+{ id: "BW", value: 3650 },
+{ id: "BY", value: -16415 },
+{ id: "BZ", value: -1147 },
+{ id: "CA", value: -294687 },
+{ id: "CC", value: 6925 },
+{ id: "CD", value: -1200 },
+{ id: "CF", value: 119 },
+{ id: "CH", value: -1311264 },
+{ id: "CI", value: -7614 },
+{ id: "CK", value: 6430 },
+{ id: "CL", value: 65077 },
+{ id: "CM", value: 881 },
+{ id: "CN", value: -3780430 },
+{ id: "CO", value: -5668 },
+{ id: "CR", value: -28447 },
+{ id: "CS", value: -4364 },
+{ id: "CU", value: 2453 },
+{ id: "CV", value: -151 },
+{ id: "CX", value: 19891 },
+{ id: "CY", value: 7131 },
+{ id: "CZ", value: -88033 },
+{ id: "DE", value: -7258799 },
+{ id: "DJ", value: 1887 },
+{ id: "DK", value: -690968 },
+{ id: "DM", value: 968 },
+{ id: "DO", value: -8483 },
+{ id: "DZ", value: 63422 },
+{ id: "EC", value: -2834 },
+{ id: "EE", value: -12862 },
+{ id: "EG", value: 488007 },
+{ id: "ER", value: 706 },
+{ id: "ES", value: -425715 },
+{ id: "ET", value: 2871 },
+{ id: "FI", value: 115727 },
+{ id: "FJ", value: 285111 },
+{ id: "FK", value: 292 },
+{ id: "FM", value: 7477 },
+{ id: "FR", value: -4162857 },
+{ id: "GA", value: 428 },
+{ id: "GB", value: 1824403 },
+{ id: "GD", value: 234 },
+{ id: "GE", value: 2940 },
+{ id: "GF", value: 608 },
+{ id: "GH", value: 84846 },
+{ id: "GI", value: 3409 },
+{ id: "GM", value: 327 },
+{ id: "GN", value: 7971 },
+{ id: "GQ", value: 843 },
+{ id: "GR", value: -34128 },
+{ id: "GT", value: 14370 },
+{ id: "GU", value: 16707 },
+{ id: "GW", value: 21 },
+{ id: "GY", value: 701 },
+{ id: "HN", value: -2856 },
+{ id: "HR", value: -11015 },
+{ id: "HT", value: -1613 },
+{ id: "HU", value: -173266 },
+{ id: "ID", value: -571620 },
+{ id: "IE", value: -1695221 },
+{ id: "IL", value: -456297 },
+{ id: "IN", value: 6142051 },
+{ id: "IQ", value: 171212 },
+{ id: "IR", value: 310997 },
+{ id: "IS", value: -9693 },
+{ id: "IT", value: -2626617 },
+{ id: "JM", value: 29424 },
+{ id: "JO", value: 92350 },
+{ id: "JP", value: 13749333 },
+{ id: "KE", value: 24785 },
+{ id: "KG", value: 171 },
+{ id: "KH", value: 27338 },
+{ id: "KI", value: 28818 },
+{ id: "KM", value: 9 },
+{ id: "KN", value: 339 },
+{ id: "KP", value: -22441 },
+{ id: "KR", value: 5269050 },
+{ id: "KW", value: 273435 },
+{ id: "KY", value: 664 },
+{ id: "KZ", value: 295 },
+{ id: "LA", value: -6048 },
+{ id: "LB", value: 14724 },
+{ id: "LC", value: 1858 },
+{ id: "LK", value: 97171 },
+{ id: "LR", value: 1123 },
+{ id: "LS", value: 184 },
+{ id: "LT", value: -12173 },
+{ id: "LU", value: -3058 },
+{ id: "LV", value: 6094 },
+{ id: "LY", value: 11471 },
+{ id: "MA", value: -11955 },
+{ id: "MD", value: -120 },
+{ id: "MG", value: 4484 },
+{ id: "MH", value: 5888 },
+{ id: "MK", value: 328 },
+{ id: "ML", value: -3498 },
+{ id: "MM", value: 22454 },
+{ id: "MN", value: 13984 },
+{ id: "MP", value: 2013 },
+{ id: "MR", value: 9320 },
+{ id: "MS", value: 36 },
+{ id: "MT", value: 32282 },
+{ id: "MU", value: 102696 },
+{ id: "MV", value: 21152 },
+{ id: "MW", value: -9905 },
+{ id: "MX", value: -102259 },
+{ id: "MY", value: -4215498 },
+{ id: "MZ", value: 398771 },
+{ id: "NA", value: -4100 },
+{ id: "NC", value: 245754 },
+{ id: "NE", value: 1400 },
+{ id: "NF", value: 14753 },
+{ id: "NG", value: 28078 },
+{ id: "NI", value: -2160 },
+{ id: "NL", value: 1265114 },
+{ id: "NO", value: -140618 },
+{ id: "NP", value: 4069 },
+{ id: "NR", value: 17464 },
+{ id: "NU", value: 127 },
+{ id: "NZ", value: 3270942 },
+{ id: "OM", value: 247842 },
+{ id: "PA", value: 4699 },
+{ id: "PE", value: 47507 },
+{ id: "PF", value: 66372 },
+{ id: "PG", value: -922032 },
+{ id: "PH", value: 71913 },
+{ id: "PK", value: 170832 },
+{ id: "PL", value: -146521 },
+{ id: "PN", value: 40 },
+{ id: "PR", value: -260617 },
+{ id: "PT", value: -83966 },
+{ id: "PW", value: 1228 },
+{ id: "PY", value: 3436 },
+{ id: "QA", value: -134878 },
+{ id: "RE", value: 11149 },
+{ id: "RO", value: 52735 },
+{ id: "RU", value: 384743 },
+{ id: "RW", value: -109 },
+{ id: "SA", value: 969868 },
+{ id: "SB", value: 63042 },
+{ id: "SC", value: 2233 },
+{ id: "SD", value: 292438 },
+{ id: "SE", value: -1972810 },
+{ id: "SG", value: -6333464 },
+{ id: "SH", value: -119 },
+{ id: "SI", value: -37088 },
+{ id: "SK", value: -18119 },
+{ id: "SL", value: 3334 },
+{ id: "SN", value: 11244 },
+{ id: "SO", value: -20 },
+{ id: "SR", value: 2609 },
+{ id: "ST", value: 1352 },
+{ id: "SV", value: 15454 },
+{ id: "SY", value: 3374 },
+{ id: "SZ", value: -52140 },
+{ id: "TC", value: -40 },
+{ id: "TD", value: 3515 },
+{ id: "TF", value: 34280 },
+{ id: "TG", value: -974 },
+{ id: "TH", value: -1158334 },
+{ id: "TJ", value: 47 },
+{ id: "TL", value: 17394 },
+{ id: "TM", value: 365 },
+{ id: "TN", value: -2225 },
+{ id: "TO", value: 12859 },
+{ id: "TR", value: 30982 },
+{ id: "TT", value: 10474 },
+{ id: "TV", value: 3116 },
+{ id: "TW", value: 2097632 },
+{ id: "TZ", value: 22099 },
+{ id: "UA", value: 32218 },
+{ id: "UG", value: -1251 },
+{ id: "UM", value: 1165 },
+{ id: "US", value: -12974450 },
+{ id: "UY", value: -1231 },
+{ id: "UZ", value: 941 },
+{ id: "VC", value: 2357 },
+{ id: "VE", value: 18183 },
+{ id: "VG", value: 5034 },
+{ id: "VI", value: 33 },
+{ id: "VN", value: -3219494 },
+{ id: "VU", value: 57798 },
+{ id: "WF", value: 6056 },
+{ id: "WS", value: -40638 },
+{ id: "XZ", value: 1226983 },
+{ id: "YE", value: 26608 },
+{ id: "ZA", value: 589558 },
+{ id: "ZM", value: 10019 },
+{ id: "ZW", value: -2883 },
+{ id: "ZZ", value: 701052 },
+        {   id: "blat",
+            value: 0
+            }]
+    };
+
+    map.areasSettings = {
+        autoZoom: true
+    };
+    map.dataProvider = dataProvider;
+
+    var valueLegend = new AmCharts.ValueLegend();
+    valueLegend.right = 10;
+    valueLegend.minValue = "little";
+    valueLegend.maxValue = "a lot!";
+    map.valueLegend = valueLegend;
+
+    map.write("mapdiv");
+});
+//]]>  
+
+</script>
+
+
+</body>
+
+
+</html>
+
+
