@@ -120,7 +120,9 @@
           })(),
           fields = [
             {name: "(no scale)", id: "none"},
-            {name: "Alcoholic exports", id: "tst", key: "amount%d"},
+            {name: "Alcoholic", id: "alcoholic", key: "amount%d"},
+            {name: "Coal", id: "coal", key: "amount%d"},
+            {name: "Uranium", id: "uranium", key: "amount%d"},
           ],
           years = d3.range(2006, 2012),
           fieldsById = d3.nest()
@@ -210,12 +212,17 @@
       //url = "data/test.topojson"
       //url = "data/countries.topojson"
       url = "../data/countries.topojson"
+
       d3.json(url, function(topo) {
         topology = topo;
         geometries = topology.objects.countries.geometries;
         //var csv = "data/commodity.csv";
         //var csv = "data/alcoholic_exports.csv";
-        var csv = "data/alcoholic_exports_new.csv";
+        //var csv = "data/alcoholic_exports_new.csv";
+        //var csv = "data/coal.csv";
+        //var csv = "data/uranium.csv";
+        parseHash();
+        var csv = "data/" + field.id + ".csv";
         //var csv = "data/test.csv";
         //var csv = "data/nst_2011.csv";
         d3.csv(csv, function(data) {
@@ -404,21 +411,21 @@
         }
       }
 
-      /*
-      time = 3;
-      years.forEach(function(year) {
-        setTimeout(function() {
-          var newHash = "tst/"+year;
-          console.log(newHash);
-          location.hash = newHash;
-        },time*1000);
-        time = time + 5;
-      });
-      setTimeout(function() {
-        console.log("end");
-        location.hash = "";
-      },time*1000);
-      */
+      function playMovie() {
+          time = 3;
+          years.forEach(function(year) {
+            setTimeout(function() {
+              var newHash = field.id + "/"+year;
+              console.log(newHash);
+              location.hash = newHash;
+            },time*1000);
+            time = time + 5;
+          });
+          setTimeout(function() {
+            console.log("end");
+            location.hash = "";
+          },time*1000);
+      }
       
 
     </script>
