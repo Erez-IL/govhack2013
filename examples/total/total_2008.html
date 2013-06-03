@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Australian Foreign Trade (total) 2008</title>
+  
+  <script type='text/javascript' src='/js/lib/dummy.js'></script>
+  <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+  
+  
+  <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  
+  <style type='text/css'>
+    
+  </style>
+  
+</head>
+<body>
+<script src="http://www.ammap.com/lib/ammap.js" type="text/javascript"></script>
+<script src="http://www.ammap.com/lib/maps/js/worldLow.js" type="text/javascript"></script>
+<heading>Australian Foreign Trade (total) 2008</heading>
+<div id="mapdiv" style="width: 100%; height: 600px;"></div>
+
+<script type='text/javascript'>//<![CDATA[ 
+
+var map;
+
+AmCharts.ready(function() {
+    map = new AmCharts.AmMap();
+    map.pathToImages = "http://www.ammap.com/lib/images/";
+    //map.panEventsEnabled = true; // this line enables pinch-zooming and dragging on touch devices
+    map.colorSteps = 20;
+    map.balloon.color = "#000000";
+    //map.balloon.color = "#FFFFFF";
+    map.balloonText = "[[title]] trade: [[customData]]";
+    var dataProvider = {
+        mapVar: AmCharts.maps.worldLow,
+
+        areas: [
+
+            {   title: "United Arab Emirates trade (AUD): total = 5,675M, export = 3,133M, import = 2,542M, balance = 591M",
+                id: "AE",
+                value: 5674788,
+                customData: "total = 5,675M, export = 3,133M, import = 2,542M, balance = 591M" },
+            
+            {   title: "Afghanistan trade (AUD): total = 12M, export = 12M, import = 0M, balance = 12M",
+                id: "AF",
+                value: 12025,
+                customData: "total = 12M, export = 12M, import = 0M, balance = 12M" },
+            
+            {   title: "Anguilla trade (AUD): total = 0M, export = 0M, import = 0M, balance = 0M",
+                id: "AI",
+                value: 69,
+                customData: "total = 0M, export = 0M, import = 0M, balance = 0M" },
+            
+            {   title: "Albania trade (AUD): total = 3M, export = 3M, import = 0M, balance = 2M",
+                id: "AL",
+                value: 2886,
+                customData: "total = 3M, export = 3M, import = 0M, balance = 2M" },
+            
+            {   title: "Armenia trade (AUD): total = 8M, export = 6M, import = 2M, balance = 5M",
+                id: "AM",
+                value: 8382,
+                customData: "total = 8M, export = 6M, import = 2M, balance = 5M" },
+            
+            {   title: "Netherlands Antilles trade (AUD): total = 4M, export = 3M, import = 1M, balance = 2M",
+                id: "AN",
+                value: 3719,
+                customData: "total = 4M, export = 3M, import = 1M, balance = 2M" },
+            
+            {   title: "Angola trade (AUD): total = 8M, export = 8M, import = 0M, balance = 8M",
+                id: "AO",
+                value: 7656,
+                customData: "total = 8M, export = 8M, import = 0M, balance = 8M" },
+            
+            {   title: "Antarctica trade (AUD): total = 5M, export = 5M, import = 0M, balance = 5M",
+                id: "AQ",
+                value: 5473,
+                customData: "total = 5M, export = 5M, import = 0M, balance = 5M" },
+            
+            {   title: "Argentina trade (AUD): total = 462M, export = 176M, import = 286M, balance = -111M",
+                id: "AR",
+                value: 461698,
+                customData: "total = 462M, export = 176M, import = 286M, balance = -111M" },
+            
+            {   title: "American Samoa trade (AUD): total = 19M, export = 12M, import = 7M, balance = 4M",
+                id: "AS",
+                value: 19094,
+                customData: "total = 19M, export = 12M, import = 7M, balance = 4M" },
+            
+            {   title: "Austria trade (AUD): total = 1,061M, export = 68M, import = 993M, balance = -925M",
+                id: "AT",
+                value: 1061320,
+                customData: "total = 1,061M, export = 68M, import = 993M, balance = -925M" },
+            
+            {   title: "Australia trade (AUD): total = 791M, export = 0M, import = 791M, balance = -791M",
+                id: "AU",
+                value: 791001,
+                customData: "total = 791M, export = 0M, import = 791M, balance = -791M" },
+            
+            {   title: "Azerbaijan trade (AUD): total = 7M, export = 7M, import = 0M, balance = 7M",
+                id: "AZ",
+                value: 7005,
+                customData: "total = 7M, export = 7M, import = 0M, balance = 7M" },
+            
+            {   title: "Bosnia-Herzegovina trade (AUD): total = 4M, export = 2M, import = 2M, balance = -1M",
+                id: "BA",
+                value: 3949,
+                customData: "total = 4M, export = 2M, import = 2M, balance = -1M" },
+            
+            {   title: "Barbados trade (AUD): total = 10M, export = 9M, import = 1M, balance = 8M",
+                id: "BB",
+                value: 10323,
+                customData: "total = 10M, export = 9M, import = 1M, balance = 8M" },
+            
+            {   title: "Bangladesh trade (AUD): total = 282M, export = 238M, import = 43M, balance = 195M",
+                id: "BD",
+                value: 281511,
+                customData: "total = 282M, export = 238M, import = 43M, balance = 195M" },
+            
+            {   title: "Belgium trade (AUD): total = 3,054M, export = 1,327M, import = 1,727M, balance = -400M",
+                id: "BE",
+                value: 3053942,
+                customData: "total = 3,054M, export = 1,327M, import = 1,727M, balance = -400M" },
+            
+            {   title: "Burkina Faso trade (AUD): total = 7M, export = 7M, import = 0M, balance = 7M",
+                id: "BF",
+                value: 6868,
+                customData: "total = 7M, export = 7M, import = 0M, balance = 7M" },
+            
+            {   title: "Bulgaria trade (AUD): total = 94M, export = 64M, import = 30M, balance = 33M",
+                id: "BG",
+                value: 94383,
+                customData: "total = 94M, export = 64M, import = 30M, balance = 33M" },
+            
+            {   title: "Bahrain trade (AUD): total = 343M, export = 144M, import = 199M, balance = -54M",
+                id: "BH",
+                value: 342897,
+                customData: "total = 343M, export = 144M, import = 199M, balance = -54M" },
+            
+            {   title: "Burundi trade (AUD): total = 0M, export = 0M, import = 0M, balance = 0M",
+                id: "BI",
+                value: 177,
+                customData: "total = 0M, export = 0M, import = 0M, balance = 0M" },
+            
+            {   title: "Benin trade (AUD): total = 2M, export = 2M, import = 0M, balance = 2M",
+                id: "BJ",
+                value: 1664,
+                customData: "total = 2M, export = 2M, import = 0M, balance = 2M" },
+            
+            {   title: "Bermuda trade (AUD): total = 2M, export = 2M, import = 0M, balance = 2M",
+                id: "BM",
+                value: 2170,
+                customData: "total = 2M, export = 2M, import = 0M, balance = 2M" },
+            
+            {   title: "Brunei trade (AUD): total = 1,113M, export = 31M, import = 1,082M, balance = -1,051M",
+                id: "BN",
+                value: 1113062,
+                customData: "total = 1,113M, export = 31M, import = 1,082M, balance = -1,051M" },
+            
+            {   title: "Bolivia trade (AUD): total = 9M, export = 4M, import = 5M, balance = -1M",
+                id: "BO",
+                value: 9461,
+                customData: "total = 9M, export = 4M, import = 5M, balance = -1M" },
+            
+            {   title: "Brazil trade (AUD): total = 1,976M, export = 936M, import = 1,041M, balance = -105M",
+                id: "BR",
+                value: 1976443,
+                customData: "total = 1,976M, export = 936M, import = 1,041M, balance = -105M" },
+            
+            {   title: "Bahamas trade (AUD): total = 6M, export = 3M, import = 3M, balance = 0M",
+                id: "BS",
+                value: 5797,
+                customData: "total = 6M, export = 3M, import = 3M, balance = 0M" },
+            
+            {   title: "Bhutan trade (AUD): total = 0M, export = 0M, import = 0M, balance = 0M",
+                id: "BT",
+                value: 65,
+                customData: "total = 0M, export = 0M, import = 0M, balance = 0M" },
+            
+            {   title: "Botswana trade (AUD): total = 8M, export = 8M, import = 0M, balance = 8M",
+                id: "BW",
+                value: 7978,
+                customData: "total = 8M, export = 8M, import = 0M, balance = 8M" },
+            
+            {   title: "Belarus trade (AUD): total = 8M, export = 2M, import = 6M, balance = -4M",
+                id: "BY",
+                value: 7543,
+                customData: "total = 8M, export = 2M, import = 6M, balance = -4M" },
+            
+            {   title: "Belize trade (AUD): total = 4M, export = 2M, import = 2M, balance = -1M",
+                id: "BZ",
+                value: 3652,
+                customData: "total = 4M, export = 2M, import = 2M, balance = -1M" },
+            
+            {   title: "Canada trade (AUD): total = 3,808M, export = 1,621M, import = 2,187M, balance = -567M",
+                id: "CA",
+                value: 3807980,
+                customData: "total = 3,808M, export = 1,621M, import = 2,187M, balance = -567M" },
+            
+            {   title: "Cocos Keeling Islands trade (AUD): total = 6M, export = 6M, import = 0M, balance = 6M",
+                id: "CC",
+                value: 6014,
+                customData: "total = 6M, export = 6M, import = 0M, balance = 6M" },
+            
+            {   title: "Democratic Republic of the Congo trade (AUD): total = 4M, export = 3M, import = 1M, balance = 2M",
+                id: "CD",
+                value: 3545,
+                customData: "total = 4M, export = 3M, import = 1M, balance = 2M" },
+            
+            {   title: "Central African Republic trade (AUD): total = 0M, export = 0M, import = 0M, balance = 0M",
+                id: "CF",
+                value: 198,
+                customData: "total = 0M, export = 0M, import = 0M, balance = 0M" },
+            
+            {   title: "Switzerland trade (AUD): total = 3,073M, export = 944M, import = 2,129M, balance = -1,186M",
+                id: "CH",
+                value: 3072873,
+                customData: "total = 3,073M, export = 944M, import = 2,129M, balance = -1,186M" },
+            
+            {   title: "Cook Islands trade (AUD): total = 11M, export = 11M, import = 0M, balance = 11M",
+                id: "CK",
+                value: 11416,
+                customData: "total = 11M, export = 11M, import = 0M, balance = 11M" },
+            
+            {   title: "Chile trade (AUD): total = 773M, export = 210M, import = 563M, balance = -353M",
+                id: "CL",
+                value: 772764,
+                customData: "total = 773M, export = 210M, import = 563M, balance = -353M" },
+            
+            {   title: "Cameroon trade (AUD): total = 13M, export = 12M, import = 1M, balance = 10M",
+                id: "CM",
+                value: 12965,
+                customData: "total = 13M, export = 12M, import = 1M, balance = 10M" },
+            
+            {   title: "China trade (AUD): total = 62,320M, export = 29,932M, import = 32,388M, balance = -2,457M",
+                id: "CN",
+                value: 62320152,
+                customData: "total = 62,320M, export = 29,932M, import = 32,388M, balance = -2,457M" },
+            
+            {   title: "Colombia trade (AUD): total = 70M, export = 43M, import = 27M, balance = 16M",
+                id: "CO",
+                value: 70160,
+                customData: "total = 70M, export = 43M, import = 27M, balance = 16M" },
+            
+            {   title: "Costa Rica trade (AUD): total = 121M, export = 32M, import = 90M, balance = -58M",
+                id: "CR",
+                value: 121454,
+                customData: "total = 121M, export = 32M, import = 90M, balance = -58M" },
+            
+            {   title: "Cuba trade (AUD): total = 19M, export = 12M, import = 7M, balance = 4M",
+                id: "CU",
+                value: 18985,
+                customData: "total = 19M, export = 12M, import = 7M, balance = 4M" },
+            
+            {   title: "Cape Verde trade (AUD): total = 0M, export = 0M, import = 0M, balance = 0M",
+                id: "CV",
+                value: 51,
+                customData: "total = 0M, export = 0M, import = 0M, balance = 0M" },
+            
+            {   title: "Christmas Island trade (AUD): total = 25M, export = 21M, import = 5M, balance = 16M",
+                id: "CX",
+                value: 25222,
+                customData: "total = 25M, export = 21M, import = 5M, balance = 16M" },
+            
+            {   title: "Cyprus trade (AUD): total = 23M, export = 13M, import = 10M, balance = 3M",
+                id: "CY",
+                value: 22505,
+                customData: "total = 23M, export = 13M, import = 10M, balance = 3M" },
+            
+            {   title: "Czech Republic trade (AUD): total = 396M, export = 111M, import = 285M, balance = -174M",
+                id: "CZ",
+                value: 396100,
+                customData: "total = 396M, export = 111M, import = 285M, balance = -174M" },
+            
+            {   title: "Germany trade (AUD): total = 12,026M, export = 1,450M, import = 10,576M, balance = -9,125M",
+                id: "DE",
+                value: 12025760,
+                customData: "total = 12,026M, export = 1,450M, import = 10,576M, balance = -9,125M" },
+            
+            {   title: "Djibouti trade (AUD): total = 5M, export = 5M, import = 0M, balance = 5M",
+                id: "DJ",
+                value: 5031,
+                customData: "total = 5M, export = 5M, import = 0M, balance = 5M" },
+            
+            {   title: "Denmark trade (AUD): total = 1,072M, export = 177M, import = 895M, balance = -718M",
+                id: "DK",
+                value: 1072432,
+                customData: "total = 1,072M, export = 177M, import = 895M, balance = -718M" },
+            
+            {   title: "Dominica trade (AUD): total = 2M, export = 0M, import = 1M, balance = -1M",
+                id: "DM",
+                value: 1557,
+                customData: "total = 2M, export = 0M, import = 1M, balance = -1M" },
+            
+            {   title: "Dominican Republic trade (AUD): total = 31M, export = 8M, import = 23M, balance = -15M",
+                id: "DO",
+                value: 30921,
+                customData: "total = 31M, export = 8M, import = 23M, balance = -15M" },
+            
+            {   title: "Algeria trade (AUD): total = 212M, export = 85M, import = 127M, balance = -43M",
+                id: "DZ",
+                value: 212139,
+                customData: "total = 212M, export = 85M, import = 127M, balance = -43M" },
+            
+            {   title: "Ecuador trade (AUD): total = 25M, export = 12M, import = 13M, balance = 0M",
+                id: "EC",
+                value: 25010,
+                customData: "total = 25M, export = 12M, import = 13M, balance = 0M" },
+            
+            {   title: "Estonia trade (AUD): total = 29M, export = 16M, import = 13M, balance = 2M",
+                id: "EE",
+                value: 29109,
+                customData: "total = 29M, export = 16M, import = 13M, balance = 2M" },
+            
+            {   title: "Egypt trade (AUD): total = 327M, export = 310M, import = 17M, balance = 292M",
+                id: "EG",
+                value: 326792,
+                customData: "total = 327M, export = 310M, import = 17M, balance = 292M" },
+            
+            {   title: "Eritrea trade (AUD): total = 1M, export = 1M, import = 0M, balance = 1M",
+                id: "ER",
+                value: 785,
+                customData: "total = 1M, export = 1M, import = 0M, balance = 1M" },
+            
+            {   title: "Spain trade (AUD): total = 2,898M, export = 902M, import = 1,996M, balance = -1,094M",
+                id: "ES",
+                value: 2898062,
+                customData: "total = 2,898M, export = 902M, import = 1,996M, balance = -1,094M" },
+            
+            {   title: "Ethiopia trade (AUD): total = 7M, export = 2M, import = 5M, balance = -3M",
+                id: "ET",
+                value: 7294,
+                customData: "total = 7M, export = 2M, import = 5M, balance = -3M" },
+            
+            {   title: "Finland trade (AUD): total = 2,083M, export = 1,138M, import = 945M, balance = 194M",
+                id: "FI",
+                value: 2083170,
+                customData: "total = 2,083M, export = 1,138M, import = 945M, balance = 194M" },
+            
+            {   title: "Fiji trade (AUD): total = 502M, export = 380M, import = 122M, balance = 258M",
+                id: "FJ",
+                value: 501894,
+                customData: "total = 502M, export = 380M, import = 122M, balance = 258M" },
+            
+            {   title: "Falkland Islands trade (AUD): total = 0M, export = 0M, import = 0M, balance = 0M",
+                id: "FK",
+                value: 498,
+                customData: "total = 0M, export = 0M, import = 0M, balance = 0M" },
+            
+            {   title: "Federated States of Micronesia trade (AUD): total = 7M, export = 7M, import = 0M, balance = 7M",
+                id: "FM",
+                value: 7288,
+                customData: "total = 7M, export = 7M, import = 0M, balance = 7M" },
+            
+            {   title: "France trade (AUD): total = 6,489M, export = 1,500M, import = 4,989M, balance = -3,488M",
+                id: "FR",
+                value: 6489322,
+                customData: "total = 6,489M, export = 1,500M, import = 4,989M, balance = -3,488M" },
+            
+            {   title: "Gabon trade (AUD): total = 2M, export = 2M, import = 0M, balance = 1M",
+                id: "GA",
+                value: 1729,
+                customData: "total = 2M, export = 2M, import = 0M, balance = 1M" },
+            
+            {   title: "United Kingdom trade (AUD): total = 16,808M, export = 8,310M, import = 8,498M, balance = -189M",
+                id: "GB",
+                value: 16807918,
+                customData: "total = 16,808M, export = 8,310M, import = 8,498M, balance = -189M" },
+            
+            {   title: "Grenada trade (AUD): total = 0M, export = 0M, import = 0M, balance = 0M",
+                id: "GD",
+                value: 260,
+                customData: "total = 0M, export = 0M, import = 0M, balance = 0M" },
+            
+            {   title: "Georgia trade (AUD): total = 21M, export = 13M, import = 8M, balance = 6M",
+                id: "GE",
+                value: 20971,
+                customData: "total = 21M, export = 13M, import = 8M, balance = 6M" },
+            
+            {   title: "French Guiana trade (AUD): total = 1M, export = 1M, import = 0M, balance = 1M",
+                id: "GF",
+                value: 962,
+                customData: "total = 1M, export = 1M, import = 0M, balance = 1M" },
+            
+            {   title: "Ghana trade (AUD): total = 150M, export = 142M, import = 8M, balance = 134M",
+                id: "GH",
+                value: 149948,
+                customData: "total = 150M, export = 142M, import = 8M, balance = 134M" },
+            
+            {   title: "Gibraltar trade (AUD): total = 2M, export = 2M, import = 0M, balance = 2M",
+                id: "GI",
+                value: 2113,
+                customData: "total = 2M, export = 2M, import = 0M, balance = 2M" },
+            
+            {   title: "Gambia trade (AUD): total = 0M, export = 0M, import = 0M, balance = 0M",
+                id: "GM",
+                value: 99,
+                customData: "total = 0M, export = 0M, import = 0M, balance = 0M" },
+            
+            {   title: "Guinea trade (AUD): total = 44M, export = 44M, import = 0M, balance = 44M",
+                id: "GN",
+                value: 43819,
+                customData: "total = 44M, export = 44M, import = 0M, balance = 44M" },
+            
+            {   title: "Equatorial Guinea trade (AUD): total = 0M, export = 0M, import = 0M, balance = 0M",
+                id: "GQ",
+                value: 306,
+                customData: "total = 0M, export = 0M, import = 0M, balance = 0M" },
+            
+            {   title: "Greece trade (AUD): total = 271M, export = 108M, import = 163M, balance = -55M",
+                id: "GR",
+                value: 271256,
+                customData: "total = 271M, export = 108M, import = 163M, balance = -55M" },
+            
+            {   title: "Guatemala trade (AUD): total = 49M, export = 43M, import = 6M, balance = 36M",
+                id: "GT",
+                value: 49055,
+                customData: "total = 49M, export = 43M, import = 6M, balance = 36M" },
+            
+            {   title: "Guam trade (AUD): total = 12M, export = 12M, import = 0M, balance = 12M",
+                id: "GU",
+                value: 12347,
+                customData: "total = 12M, export = 12M, import = 0M, balance = 12M" },
+            
+            {   title: "Guinea-Bissau trade (AUD): total = 0M, export = 0M, import = 0M, balance = 0M",
+                id: "GW",
+                value: 149,
+                customData: "total = 0M, export = 0M, import = 0M, balance = 0M" },
+            
+            {   title: "Guyana trade (AUD): total = 3M, export = 2M, import = 1M, balance = 2M",
+                id: "GY",
+                value: 3185,
+                customData: "total = 3M, export = 2M, import = 1M, balance = 2M" },
+            
+            {   title: "Honduras trade (AUD): total = 22M, export = 11M, import = 11M, balance = 0M",
+                id: "HN",
+                value: 22322,
+                customData: "total = 22M, export = 11M, import = 11M, balance = 0M" },
+            
+            {   title: "Croatia trade (AUD): total = 23M, export = 6M, import = 17M, balance = -10M",
+                id: "HR",
+                value: 22867,
+                customData: "total = 23M, export = 6M, import = 17M, balance = -10M" },
+            
+            {   title: "Haiti trade (AUD): total = 5M, export = 3M, import = 2M, balance = 1M",
+                id: "HT",
+                value: 4942,
+                customData: "total = 5M, export = 3M, import = 2M, balance = 1M" },
+            
+            {   title: "Hungary trade (AUD): total = 366M, export = 15M, import = 351M, balance = -336M",
+                id: "HU",
+                value: 365526,
+                customData: "total = 366M, export = 15M, import = 351M, balance = -336M" },
+            
+            {   title: "Indonesia trade (AUD): total = 8,542M, export = 3,957M, import = 4,585M, balance = -628M",
+                id: "ID",
+                value: 8541833,
+                customData: "total = 8,542M, export = 3,957M, import = 4,585M, balance = -628M" },
+            
+            {   title: "Ireland trade (AUD): total = 2,247M, export = 241M, import = 2,006M, balance = -1,764M",
+                id: "IE",
+                value: 2246839,
+                customData: "total = 2,247M, export = 241M, import = 2,006M, balance = -1,764M" },
+            
+            {   title: "Israel trade (AUD): total = 939M, export = 254M, import = 685M, balance = -431M",
+                id: "IL",
+                value: 938597,
+                customData: "total = 939M, export = 254M, import = 685M, balance = -431M" },
+            
+            {   title: "India trade (AUD): total = 10,934M, export = 9,328M, import = 1,606M, balance = 7,722M",
+                id: "IN",
+                value: 10933966,
+                customData: "total = 10,934M, export = 9,328M, import = 1,606M, balance = 7,722M" },
+            
+            {   title: "British Indian Ocean Territory trade (AUD): total = 1M, export = 0M, import = 1M, balance = -1M",
+                id: "IO",
+                value: 515,
+                customData: "total = 1M, export = 0M, import = 1M, balance = -1M" },
+            
+            {   title: "Iraq trade (AUD): total = 117M, export = 94M, import = 23M, balance = 71M",
+                id: "IQ",
+                value: 117395,
+                customData: "total = 117M, export = 94M, import = 23M, balance = 71M" },
+            
+            {   title: "Iran trade (AUD): total = 218M, export = 164M, import = 54M, balance = 110M",
+                id: "IR",
+                value: 217989,
+                customData: "total = 218M, export = 164M, import = 54M, balance = 110M" },
+            
+            {   title: "Iceland trade (AUD): total = 32M, export = 5M, import = 27M, balance = -22M",
+                id: "IS",
+                value: 32489,
+                customData: "total = 32M, export = 5M, import = 27M, balance = -22M" },
+            
+            {   title: "Italy trade (AUD): total = 6,352M, export = 1,456M, import = 4,895M, balance = -3,439M",
+                id: "IT",
+                value: 6351625,
+                customData: "total = 6,352M, export = 1,456M, import = 4,895M, balance = -3,439M" },
+            
+            {   title: "Jamaica trade (AUD): total = 32M, export = 30M, import = 2M, balance = 29M",
+                id: "JM",
+                value: 31882,
+                customData: "total = 32M, export = 30M, import = 2M, balance = 29M" },
+            
+            {   title: "Jordan trade (AUD): total = 76M, export = 68M, import = 8M, balance = 60M",
+                id: "JO",
+                value: 76322,
+                customData: "total = 76M, export = 68M, import = 8M, balance = 60M" },
+            
+            {   title: "Japan trade (AUD): total = 54,646M, export = 34,967M, import = 19,679M, balance = 15,288M",
+                id: "JP",
+                value: 54645923,
+                customData: "total = 54,646M, export = 34,967M, import = 19,679M, balance = 15,288M" },
+            
+            {   title: "Kenya trade (AUD): total = 60M, export = 49M, import = 11M, balance = 38M",
+                id: "KE",
+                value: 60340,
+                customData: "total = 60M, export = 49M, import = 11M, balance = 38M" },
+            
+            {   title: "Kyrgyzstan trade (AUD): total = 3M, export = 3M, import = 1M, balance = 2M",
+                id: "KG",
+                value: 3291,
+                customData: "total = 3M, export = 3M, import = 1M, balance = 2M" },
+            
+            {   title: "Cambodia trade (AUD): total = 67M, export = 44M, import = 23M, balance = 21M",
+                id: "KH",
+                value: 66557,
+                customData: "total = 67M, export = 44M, import = 23M, balance = 21M" },
+            
+            {   title: "Kiribati trade (AUD): total = 28M, export = 27M, import = 1M, balance = 25M",
+                id: "KI",
+                value: 27651,
+                customData: "total = 28M, export = 27M, import = 1M, balance = 25M" },
+            
+            {   title: "Comoros trade (AUD): total = 0M, export = 0M, import = 0M, balance = 0M",
+                id: "KM",
+                value: 75,
+                customData: "total = 0M, export = 0M, import = 0M, balance = 0M" },
+            
+            {   title: "St Kitts & Nevis trade (AUD): total = 0M, export = 0M, import = 0M, balance = 0M",
+                id: "KN",
+                value: 192,
+                customData: "total = 0M, export = 0M, import = 0M, balance = 0M" },
+            
+            {   title: "Democratic People's Republic of Korea trade (AUD): total = 7M, export = 0M, import = 7M, balance = -7M",
+                id: "KP",
+                value: 7427,
+                customData: "total = 7M, export = 0M, import = 7M, balance = -7M" },
+            
+            {   title: "Korea, Republic of trade (AUD): total = 20,403M, export = 14,240M, import = 6,163M, balance = 8,076M",
+                id: "KR",
+                value: 20402878,
+                customData: "total = 20,403M, export = 14,240M, import = 6,163M, balance = 8,076M" },
+            
+            {   title: "Kuwait trade (AUD): total = 940M, export = 577M, import = 363M, balance = 213M",
+                id: "KW",
+                value: 939649,
+                customData: "total = 940M, export = 577M, import = 363M, balance = 213M" },
+            
+            {   title: "Cayman Islands trade (AUD): total = 1M, export = 1M, import = 0M, balance = 0M",
+                id: "KY",
+                value: 638,
+                customData: "total = 1M, export = 1M, import = 0M, balance = 0M" },
+            
+            {   title: "Kazakhstan trade (AUD): total = 36M, export = 21M, import = 15M, balance = 6M",
+                id: "KZ",
+                value: 35702,
+                customData: "total = 36M, export = 21M, import = 15M, balance = 6M" },
+            
+            {   title: "Laos trade (AUD): total = 22M, export = 21M, import = 1M, balance = 21M",
+                id: "LA",
+                value: 21871,
+                customData: "total = 22M, export = 21M, import = 1M, balance = 21M" },
+            
+            {   title: "Lebanon trade (AUD): total = 35M, export = 23M, import = 13M, balance = 10M",
+                id: "LB",
+                value: 35143,
+                customData: "total = 35M, export = 23M, import = 13M, balance = 10M" },
+            
+            {   title: "St Lucia trade (AUD): total = 3M, export = 3M, import = 0M, balance = 3M",
+                id: "LC",
+                value: 2857,
+                customData: "total = 3M, export = 3M, import = 0M, balance = 3M" },
+            
+            {   title: "Sri Lanka trade (AUD): total = 280M, export = 180M, import = 99M, balance = 81M",
+                id: "LK",
+                value: 279723,
+                customData: "total = 280M, export = 180M, import = 99M, balance = 81M" },
+            
+            {   title: "Liberia trade (AUD): total = 2M, export = 2M, import = 0M, balance = 2M",
+                id: "LR",
+                value: 1587,
+                customData: "total = 2M, export = 2M, import = 0M, balance = 2M" },
+            
+            {   title: "Lesotho trade (AUD): total = 0M, export = 0M, import = 0M, balance = 0M",
+                id: "LS",
+                value: 26,
+                customData: "total = 0M, export = 0M, import = 0M, balance = 0M" },
+            
+            {   title: "Lithuania trade (AUD): total = 34M, export = 7M, import = 27M, balance = -20M",
+                id: "LT",
+                value: 33771,
+                customData: "total = 34M, export = 7M, import = 27M, balance = -20M" },
+            
+            {   title: "Luxembourg trade (AUD): total = 24M, export = 2M, import = 22M, balance = -21M",
+                id: "LU",
+                value: 24135,
+                customData: "total = 24M, export = 2M, import = 22M, balance = -21M" },
+            
+            {   title: "Latvia trade (AUD): total = 14M, export = 11M, import = 3M, balance = 8M",
+                id: "LV",
+                value: 14207,
+                customData: "total = 14M, export = 11M, import = 3M, balance = 8M" },
+            
+            {   title: "Libya trade (AUD): total = 29M, export = 29M, import = 0M, balance = 29M",
+                id: "LY",
+                value: 28525,
+                customData: "total = 29M, export = 29M, import = 0M, balance = 29M" },
+            
+            {   title: "Morocco trade (AUD): total = 85M, export = 15M, import = 71M, balance = -56M",
+                id: "MA",
+                value: 85370,
+                customData: "total = 85M, export = 15M, import = 71M, balance = -56M" },
+            
+            {   title: "Moldova trade (AUD): total = 1M, export = 0M, import = 1M, balance = -1M",
+                id: "MD",
+                value: 717,
+                customData: "total = 1M, export = 0M, import = 1M, balance = -1M" },
+            
+            {   title: "Madagascar trade (AUD): total = 9M, export = 8M, import = 0M, balance = 8M",
+                id: "MG",
+                value: 8941,
+                customData: "total = 9M, export = 8M, import = 0M, balance = 8M" },
+            
+            {   title: "Marshall Islands trade (AUD): total = 7M, export = 7M, import = 1M, balance = 6M",
+                id: "MH",
+                value: 7457,
+                customData: "total = 7M, export = 7M, import = 1M, balance = 6M" },
+            
+            {   title: "FYR Macedonia trade (AUD): total = 6M, export = 2M, import = 4M, balance = -2M",
+                id: "MK",
+                value: 6241,
+                customData: "total = 6M, export = 2M, import = 4M, balance = -2M" },
+            
+            {   title: "Mali trade (AUD): total = 31M, export = 24M, import = 7M, balance = 17M",
+                id: "ML",
+                value: 30995,
+                customData: "total = 31M, export = 24M, import = 7M, balance = 17M" },
+            
+            {   title: "Burma (Rep of the Union of Myanmar) trade (AUD): total = 49M, export = 29M, import = 20M, balance = 9M",
+                id: "MM",
+                value: 48840,
+                customData: "total = 49M, export = 29M, import = 20M, balance = 9M" },
+            
+            {   title: "Mongolia trade (AUD): total = 16M, export = 16M, import = 0M, balance = 15M",
+                id: "MN",
+                value: 15838,
+                customData: "total = 16M, export = 16M, import = 0M, balance = 15M" },
+            
+            {   title: "Northern Marianas trade (AUD): total = 1M, export = 1M, import = 0M, balance = 1M",
+                id: "MP",
+                value: 1213,
+                customData: "total = 1M, export = 1M, import = 0M, balance = 1M" },
+            
+            {   title: "Mauritania trade (AUD): total = 9M, export = 9M, import = 0M, balance = 9M",
+                id: "MR",
+                value: 9122,
+                customData: "total = 9M, export = 9M, import = 0M, balance = 9M" },
+            
+            {   title: "Montserrat trade (AUD): total = 0M, export = 0M, import = 0M, balance = 0M",
+                id: "MS",
+                value: 352,
+                customData: "total = 0M, export = 0M, import = 0M, balance = 0M" },
+            
+            {   title: "Malta trade (AUD): total = 20M, export = 7M, import = 13M, balance = -7M",
+                id: "MT",
+                value: 20124,
+                customData: "total = 20M, export = 7M, import = 13M, balance = -7M" },
+            
+            {   title: "Mauritius trade (AUD): total = 100M, export = 94M, import = 7M, balance = 87M",
+                id: "MU",
+                value: 100331,
+                customData: "total = 100M, export = 94M, import = 7M, balance = 87M" },
+            
+            {   title: "Maldives trade (AUD): total = 26M, export = 25M, import = 0M, balance = 25M",
+                id: "MV",
+                value: 25739,
+                customData: "total = 26M, export = 25M, import = 0M, balance = 25M" },
+            
+            {   title: "Malawi trade (AUD): total = 5M, export = 1M, import = 4M, balance = -3M",
+                id: "MW",
+                value: 4735,
+                customData: "total = 5M, export = 1M, import = 4M, balance = -3M" },
+            
+            {   title: "Mexico trade (AUD): total = 1,789M, export = 551M, import = 1,238M, balance = -687M",
+                id: "MX",
+                value: 1788606,
+                customData: "total = 1,789M, export = 551M, import = 1,238M, balance = -687M" },
+            
+            {   title: "Malaysia trade (AUD): total = 11,507M, export = 3,426M, import = 8,081M, balance = -4,656M",
+                id: "MY",
+                value: 11506948,
+                customData: "total = 11,507M, export = 3,426M, import = 8,081M, balance = -4,656M" },
+            
+            {   title: "Mozambique trade (AUD): total = 388M, export = 388M, import = 1M, balance = 387M",
+                id: "MZ",
+                value: 388254,
+                customData: "total = 388M, export = 388M, import = 1M, balance = 387M" },
+            
+            {   title: "Namibia trade (AUD): total = 17M, export = 9M, import = 8M, balance = 1M",
+                id: "NA",
+                value: 16767,
+                customData: "total = 17M, export = 9M, import = 8M, balance = 1M" },
+            
+            {   title: "New Caledonia trade (AUD): total = 444M, export = 359M, import = 85M, balance = 273M",
+                id: "NC",
+                value: 444033,
+                customData: "total = 444M, export = 359M, import = 85M, balance = 273M" },
+            
+            {   title: "Niger trade (AUD): total = 14M, export = 4M, import = 10M, balance = -6M",
+                id: "NE",
+                value: 13605,
+                customData: "total = 14M, export = 4M, import = 10M, balance = -6M" },
+            
+            {   title: "Norfolk Island trade (AUD): total = 13M, export = 13M, import = 0M, balance = 13M",
+                id: "NF",
+                value: 13325,
+                customData: "total = 13M, export = 13M, import = 0M, balance = 13M" },
+            
+            {   title: "Nigeria trade (AUD): total = 35M, export = 34M, import = 1M, balance = 33M",
+                id: "NG",
+                value: 34736,
+                customData: "total = 35M, export = 34M, import = 1M, balance = 33M" },
+            
+            {   title: "Nicaragua trade (AUD): total = 8M, export = 1M, import = 7M, balance = -6M",
+                id: "NI",
+                value: 8429,
+                customData: "total = 8M, export = 1M, import = 7M, balance = -6M" },
+            
+            {   title: "Netherlands trade (AUD): total = 4,419M, export = 2,864M, import = 1,555M, balance = 1,309M",
+                id: "NL",
+                value: 4418558,
+                customData: "total = 4,419M, export = 2,864M, import = 1,555M, balance = 1,309M" },
+            
+            {   title: "Norway trade (AUD): total = 547M, export = 196M, import = 351M, balance = -155M",
+                id: "NO",
+                value: 546698,
+                customData: "total = 547M, export = 196M, import = 351M, balance = -155M" },
+            
+            {   title: "Nepal trade (AUD): total = 22M, export = 18M, import = 4M, balance = 14M",
+                id: "NP",
+                value: 21535,
+                customData: "total = 22M, export = 18M, import = 4M, balance = 14M" },
+            
+            {   title: "Nauru trade (AUD): total = 30M, export = 24M, import = 5M, balance = 19M",
+                id: "NR",
+                value: 29781,
+                customData: "total = 30M, export = 24M, import = 5M, balance = 19M" },
+            
+            {   title: "Niue trade (AUD): total = 2M, export = 2M, import = 0M, balance = 1M",
+                id: "NU",
+                value: 1537,
+                customData: "total = 2M, export = 2M, import = 0M, balance = 1M" },
+            
+            {   title: "New Zealand trade (AUD): total = 16,573M, export = 9,529M, import = 7,044M, balance = 2,486M",
+                id: "NZ",
+                value: 16572745,
+                customData: "total = 16,573M, export = 9,529M, import = 7,044M, balance = 2,486M" },
+            
+            {   title: "Oman trade (AUD): total = 483M, export = 469M, import = 14M, balance = 455M",
+                id: "OM",
+                value: 483212,
+                customData: "total = 483M, export = 469M, import = 14M, balance = 455M" },
+            
+            {   title: "Panama trade (AUD): total = 12M, export = 11M, import = 1M, balance = 10M",
+                id: "PA",
+                value: 11992,
+                customData: "total = 12M, export = 11M, import = 1M, balance = 10M" },
+            
+            {   title: "Peru trade (AUD): total = 152M, export = 84M, import = 68M, balance = 16M",
+                id: "PE",
+                value: 152460,
+                customData: "total = 152M, export = 84M, import = 68M, balance = 16M" },
+            
+            {   title: "French Polynesia trade (AUD): total = 86M, export = 80M, import = 6M, balance = 74M",
+                id: "PF",
+                value: 85578,
+                customData: "total = 86M, export = 80M, import = 6M, balance = 74M" },
+            
+            {   title: "Papua New Guinea trade (AUD): total = 4,364M, export = 1,616M, import = 2,748M, balance = -1,132M",
+                id: "PG",
+                value: 4364227,
+                customData: "total = 4,364M, export = 1,616M, import = 2,748M, balance = -1,132M" },
+            
+            {   title: "Philippines trade (AUD): total = 2,043M, export = 1,280M, import = 763M, balance = 517M",
+                id: "PH",
+                value: 2042957,
+                customData: "total = 2,043M, export = 1,280M, import = 763M, balance = 517M" },
+            
+            {   title: "Pakistan trade (AUD): total = 645M, export = 491M, import = 154M, balance = 336M",
+                id: "PK",
+                value: 644775,
+                customData: "total = 645M, export = 491M, import = 154M, balance = 336M" },
+            
+            {   title: "Poland trade (AUD): total = 358M, export = 39M, import = 319M, balance = -280M",
+                id: "PL",
+                value: 358304,
+                customData: "total = 358M, export = 39M, import = 319M, balance = -280M" },
+            
+            {   title: "St Pierre & Miquelon trade (AUD): total = 0M, export = 0M, import = 0M, balance = 0M",
+                id: "PM",
+                value: 12,
+                customData: "total = 0M, export = 0M, import = 0M, balance = 0M" },
+            
+            {   title: "Pitcairn Island trade (AUD): total = 2M, export = 0M, import = 2M, balance = -1M",
+                id: "PN",
+                value: 2000,
+                customData: "total = 2M, export = 0M, import = 2M, balance = -1M" },
+            
+            {   title: "Puerto Rico trade (AUD): total = 439M, export = 9M, import = 430M, balance = -421M",
+                id: "PR",
+                value: 438660,
+                customData: "total = 439M, export = 9M, import = 430M, balance = -421M" },
+            
+            {   title: "Portugal trade (AUD): total = 218M, export = 31M, import = 187M, balance = -156M",
+                id: "PT",
+                value: 218112,
+                customData: "total = 218M, export = 31M, import = 187M, balance = -156M" },
+            
+            {   title: "Palau trade (AUD): total = 1M, export = 1M, import = 0M, balance = 1M",
+                id: "PW",
+                value: 773,
+                customData: "total = 1M, export = 1M, import = 0M, balance = 1M" },
+            
+            {   title: "Paraguay trade (AUD): total = 2M, export = 1M, import = 1M, balance = 1M",
+                id: "PY",
+                value: 1913,
+                customData: "total = 2M, export = 1M, import = 1M, balance = 1M" },
+            
+            {   title: "Qatar trade (AUD): total = 488M, export = 199M, import = 289M, balance = -90M",
+                id: "QA",
+                value: 487988,
+                customData: "total = 488M, export = 199M, import = 289M, balance = -90M" },
+            
+            {   title: "Romania trade (AUD): total = 188M, export = 143M, import = 45M, balance = 98M",
+                id: "RO",
+                value: 188221,
+                customData: "total = 188M, export = 143M, import = 45M, balance = 98M" },
+            
+            {   title: "Serbia & Montenegro trade (AUD): total = 17M, export = 7M, import = 10M, balance = -2M",
+                id: "RS",
+                value: 17272,
+                customData: "total = 17M, export = 7M, import = 10M, balance = -2M" },
+            
+            {   title: "Russian Federation trade (AUD): total = 1,212M, export = 868M, import = 344M, balance = 523M",
+                id: "RU",
+                value: 1211984,
+                customData: "total = 1,212M, export = 868M, import = 344M, balance = 523M" },
+            
+            {   title: "Rwanda trade (AUD): total = 1M, export = 1M, import = 0M, balance = 0M",
+                id: "RW",
+                value: 603,
+                customData: "total = 1M, export = 1M, import = 0M, balance = 0M" },
+            
+            {   title: "Saudi Arabia trade (AUD): total = 3,155M, export = 2,247M, import = 908M, balance = 1,339M",
+                id: "SA",
+                value: 3154879,
+                customData: "total = 3,155M, export = 2,247M, import = 908M, balance = 1,339M" },
+            
+            {   title: "Solomon Islands trade (AUD): total = 82M, export = 75M, import = 7M, balance = 68M",
+                id: "SB",
+                value: 81948,
+                customData: "total = 82M, export = 75M, import = 7M, balance = 68M" },
+            
+            {   title: "Seychelles trade (AUD): total = 10M, export = 7M, import = 3M, balance = 4M",
+                id: "SC",
+                value: 9586,
+                customData: "total = 10M, export = 7M, import = 3M, balance = 4M" },
+            
+            {   title: "Sudan trade (AUD): total = 189M, export = 189M, import = 0M, balance = 189M",
+                id: "SD",
+                value: 188648,
+                customData: "total = 189M, export = 189M, import = 0M, balance = 189M" },
+            
+            {   title: "Sweden trade (AUD): total = 2,906M, export = 445M, import = 2,461M, balance = -2,015M",
+                id: "SE",
+                value: 2906126,
+                customData: "total = 2,906M, export = 445M, import = 2,461M, balance = -2,015M" },
+            
+            {   title: "Singapore trade (AUD): total = 18,910M, export = 5,226M, import = 13,685M, balance = -8,459M",
+                id: "SG",
+                value: 18910423,
+                customData: "total = 18,910M, export = 5,226M, import = 13,685M, balance = -8,459M" },
+            
+            {   title: "St Helena trade (AUD): total = 0M, export = 0M, import = 0M, balance = 0M",
+                id: "SH",
+                value: 208,
+                customData: "total = 0M, export = 0M, import = 0M, balance = 0M" },
+            
+            {   title: "Slovenia trade (AUD): total = 70M, export = 15M, import = 56M, balance = -41M",
+                id: "SI",
+                value: 70335,
+                customData: "total = 70M, export = 15M, import = 56M, balance = -41M" },
+            
+            {   title: "Slovak Republic trade (AUD): total = 168M, export = 3M, import = 165M, balance = -162M",
+                id: "SK",
+                value: 167832,
+                customData: "total = 168M, export = 3M, import = 165M, balance = -162M" },
+            
+            {   title: "Sierra Leone trade (AUD): total = 7M, export = 5M, import = 2M, balance = 3M",
+                id: "SL",
+                value: 7166,
+                customData: "total = 7M, export = 5M, import = 2M, balance = 3M" },
+            
+            {   title: "Senegal trade (AUD): total = 33M, export = 31M, import = 3M, balance = 28M",
+                id: "SN",
+                value: 33266,
+                customData: "total = 33M, export = 31M, import = 3M, balance = 28M" },
+            
+            {   title: "Somalia trade (AUD): total = 0M, export = 0M, import = 0M, balance = 0M",
+                id: "SO",
+                value: 492,
+                customData: "total = 0M, export = 0M, import = 0M, balance = 0M" },
+            
+            {   title: "Suriname trade (AUD): total = 2M, export = 2M, import = 0M, balance = 1M",
+                id: "SR",
+                value: 2150,
+                customData: "total = 2M, export = 2M, import = 0M, balance = 1M" },
+            
+            {   title: "Sao Tome & Principe trade (AUD): total = 0M, export = 0M, import = 0M, balance = 0M",
+                id: "ST",
+                value: 173,
+                customData: "total = 0M, export = 0M, import = 0M, balance = 0M" },
+            
+            {   title: "El Salvador trade (AUD): total = 38M, export = 36M, import = 2M, balance = 33M",
+                id: "SV",
+                value: 38201,
+                customData: "total = 38M, export = 36M, import = 2M, balance = 33M" },
+            
+            {   title: "Syria trade (AUD): total = 6M, export = 4M, import = 2M, balance = 3M",
+                id: "SY",
+                value: 5880,
+                customData: "total = 6M, export = 4M, import = 2M, balance = 3M" },
+            
+            {   title: "Swaziland trade (AUD): total = 54M, export = 0M, import = 54M, balance = -53M",
+                id: "SZ",
+                value: 54160,
+                customData: "total = 54M, export = 0M, import = 54M, balance = -53M" },
+            
+            {   title: "Turks & Caicos Islands trade (AUD): total = 0M, export = 0M, import = 0M, balance = 0M",
+                id: "TC",
+                value: 21,
+                customData: "total = 0M, export = 0M, import = 0M, balance = 0M" },
+            
+            {   title: "Chad trade (AUD): total = 2M, export = 2M, import = 0M, balance = 2M",
+                id: "TD",
+                value: 1792,
+                customData: "total = 2M, export = 2M, import = 0M, balance = 2M" },
+            
+            {   title: "French Antilles trade (AUD): total = 5M, export = 5M, import = 0M, balance = 5M",
+                id: "TF",
+                value: 5377,
+                customData: "total = 5M, export = 5M, import = 0M, balance = 5M" },
+            
+            {   title: "Togo trade (AUD): total = 3M, export = 3M, import = 0M, balance = 3M",
+                id: "TG",
+                value: 3324,
+                customData: "total = 3M, export = 3M, import = 0M, balance = 3M" },
+            
+            {   title: "Thailand trade (AUD): total = 13,491M, export = 4,645M, import = 8,846M, balance = -4,201M",
+                id: "TH",
+                value: 13490895,
+                customData: "total = 13,491M, export = 4,645M, import = 8,846M, balance = -4,201M" },
+            
+            {   title: "Tajikistan trade (AUD): total = 0M, export = 0M, import = 0M, balance = 0M",
+                id: "TJ",
+                value: 297,
+                customData: "total = 0M, export = 0M, import = 0M, balance = 0M" },
+            
+            {   title: "East Timor trade (AUD): total = 37M, export = 33M, import = 4M, balance = 29M",
+                id: "TL",
+                value: 37341,
+                customData: "total = 37M, export = 33M, import = 4M, balance = 29M" },
+            
+            {   title: "Turkmenistan trade (AUD): total = 0M, export = 0M, import = 0M, balance = 0M",
+                id: "TM",
+                value: 248,
+                customData: "total = 0M, export = 0M, import = 0M, balance = 0M" },
+            
+            {   title: "Tunisia trade (AUD): total = 59M, export = 14M, import = 45M, balance = -31M",
+                id: "TN",
+                value: 58728,
+                customData: "total = 59M, export = 14M, import = 45M, balance = -31M" },
+            
+            {   title: "Tonga trade (AUD): total = 15M, export = 14M, import = 1M, balance = 13M",
+                id: "TO",
+                value: 14639,
+                customData: "total = 15M, export = 14M, import = 1M, balance = 13M" },
+            
+            {   title: "Turkey trade (AUD): total = 1,060M, export = 655M, import = 404M, balance = 251M",
+                id: "TR",
+                value: 1059917,
+                customData: "total = 1,060M, export = 655M, import = 404M, balance = 251M" },
+            
+            {   title: "Trinidad & Tobago trade (AUD): total = 24M, export = 19M, import = 5M, balance = 14M",
+                id: "TT",
+                value: 24286,
+                customData: "total = 24M, export = 19M, import = 5M, balance = 14M" },
+            
+            {   title: "Tuvalu trade (AUD): total = 5M, export = 4M, import = 1M, balance = 3M",
+                id: "TV",
+                value: 5338,
+                customData: "total = 5M, export = 4M, import = 1M, balance = 3M" },
+            
+            {   title: "Taiwan trade (AUD): total = 10,607M, export = 6,479M, import = 4,127M, balance = 2,352M",
+                id: "TW",
+                value: 10606512,
+                customData: "total = 10,607M, export = 6,479M, import = 4,127M, balance = 2,352M" },
+            
+            {   title: "Tanzania trade (AUD): total = 55M, export = 52M, import = 3M, balance = 49M",
+                id: "TZ",
+                value: 55214,
+                customData: "total = 55M, export = 52M, import = 3M, balance = 49M" },
+            
+            {   title: "Ukraine trade (AUD): total = 258M, export = 204M, import = 55M, balance = 149M",
+                id: "UA",
+                value: 258214,
+                customData: "total = 258M, export = 204M, import = 55M, balance = 149M" },
+            
+            {   title: "Uganda trade (AUD): total = 12M, export = 5M, import = 6M, balance = -1M",
+                id: "UG",
+                value: 11745,
+                customData: "total = 12M, export = 5M, import = 6M, balance = -1M" },
+            
+            {   title: "US Outlying Islands trade (AUD): total = 1M, export = 0M, import = 0M, balance = 0M",
+                id: "UM",
+                value: 543,
+                customData: "total = 1M, export = 0M, import = 0M, balance = 0M" },
+            
+            {   title: "United States trade (AUD): total = 34,926M, export = 10,602M, import = 24,325M, balance = -13,723M",
+                id: "US",
+                value: 34926293,
+                customData: "total = 34,926M, export = 10,602M, import = 24,325M, balance = -13,723M" },
+            
+            {   title: "Uruguay trade (AUD): total = 51M, export = 24M, import = 27M, balance = -4M",
+                id: "UY",
+                value: 51020,
+                customData: "total = 51M, export = 24M, import = 27M, balance = -4M" },
+            
+            {   title: "Uzbekistan trade (AUD): total = 1M, export = 1M, import = 0M, balance = 1M",
+                id: "UZ",
+                value: 941,
+                customData: "total = 1M, export = 1M, import = 0M, balance = 1M" },
+            
+            {   title: "St Vincent & Grenadines trade (AUD): total = 2M, export = 2M, import = 0M, balance = 2M",
+                id: "VC",
+                value: 1756,
+                customData: "total = 2M, export = 2M, import = 0M, balance = 2M" },
+            
+            {   title: "Venezuela trade (AUD): total = 22M, export = 20M, import = 2M, balance = 18M",
+                id: "VE",
+                value: 21600,
+                customData: "total = 22M, export = 20M, import = 2M, balance = 18M" },
+            
+            {   title: "UK Virgin Islands trade (AUD): total = 5M, export = 0M, import = 5M, balance = -5M",
+                id: "VG",
+                value: 4986,
+                customData: "total = 5M, export = 0M, import = 5M, balance = -5M" },
+            
+            {   title: "US Virgin Islands trade (AUD): total = 6M, export = 2M, import = 4M, balance = -3M",
+                id: "VI",
+                value: 5914,
+                customData: "total = 6M, export = 2M, import = 4M, balance = -3M" },
+            
+            {   title: "Vietnam trade (AUD): total = 6,947M, export = 1,814M, import = 5,133M, balance = -3,319M",
+                id: "VN",
+                value: 6946751,
+                customData: "total = 6,947M, export = 1,814M, import = 5,133M, balance = -3,319M" },
+            
+            {   title: "Vanuatu trade (AUD): total = 82M, export = 79M, import = 2M, balance = 77M",
+                id: "VU",
+                value: 81648,
+                customData: "total = 82M, export = 79M, import = 2M, balance = 77M" },
+            
+            {   title: "Wallis & Futuna Island trade (AUD): total = 6M, export = 6M, import = 0M, balance = 6M",
+                id: "WF",
+                value: 5637,
+                customData: "total = 6M, export = 6M, import = 0M, balance = 6M" },
+            
+            {   title: "Samoa trade (AUD): total = 119M, export = 28M, import = 91M, balance = -63M",
+                id: "WS",
+                value: 118785,
+                customData: "total = 119M, export = 28M, import = 91M, balance = -63M" },
+            
+            {   title: "International Waters trade (AUD): total = 2,517M, export = 1,652M, import = 865M, balance = 788M",
+                id: "XZ",
+                value: 2517307,
+                customData: "total = 2,517M, export = 1,652M, import = 865M, balance = 788M" },
+            
+            {   title: "Yemen trade (AUD): total = 190M, export = 190M, import = 0M, balance = 190M",
+                id: "YE",
+                value: 190338,
+                customData: "total = 190M, export = 190M, import = 0M, balance = 190M" },
+            
+            {   title: "South Africa trade (AUD): total = 3,904M, export = 2,408M, import = 1,497M, balance = 911M",
+                id: "ZA",
+                value: 3904264,
+                customData: "total = 3,904M, export = 2,408M, import = 1,497M, balance = 911M" },
+            
+            {   title: "Zambia trade (AUD): total = 18M, export = 17M, import = 1M, balance = 16M",
+                id: "ZM",
+                value: 17953,
+                customData: "total = 18M, export = 17M, import = 1M, balance = 16M" },
+            
+            {   title: "Zimbabwe trade (AUD): total = 7M, export = 1M, import = 6M, balance = -5M",
+                id: "ZW",
+                value: 7273,
+                customData: "total = 7M, export = 1M, import = 6M, balance = -5M" },
+            
+            {   title: "Unknown trade (AUD): total = 928M, export = 895M, import = 33M, balance = 862M",
+                id: "ZZ",
+                value: 927801,
+                customData: "total = 928M, export = 895M, import = 33M, balance = 862M" },
+            
+            {   id: "max", value: 110419396 },
+            {   id: "min", value: 2 }
+                        ]
+    };
+
+    map.areasSettings = {
+        autoZoom: true
+    };
+    map.dataProvider = dataProvider;
+
+    var valueLegend = new AmCharts.ValueLegend();
+    valueLegend.right = 10;
+    valueLegend.minValue = "little";
+    valueLegend.maxValue = "a lot!";
+    map.valueLegend = valueLegend;
+
+    map.write("mapdiv");
+});
+//]]>  
+
+</script>
+
+
+</body>
+
+
+</html>
+
+
